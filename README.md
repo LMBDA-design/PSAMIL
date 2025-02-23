@@ -1,6 +1,6 @@
 # PSAMIL
 
-## Public Dataset Experiments
+## Used for Public Dataset Experiments
 
 ### Camelyon16/TCGA-Lung-Cancer
 
