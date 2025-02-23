@@ -84,51 +84,51 @@ def test(args, bags_list, milnet):
 
     state_dict_weights = torch.load(os.path.join('weights', '20241126', args.weights[0]+".pth"))
     psmil.load_state_dict(state_dict_weights, strict=True)
-    # for i in range(0, num_bags):
-    #     feats_list = []
-    #     pos_list = []
-    #     classes_list = []
-    #     csv_file_path = glob.glob(os.path.join(bags_list[i], '*.jpg'))
-    #     dataloader, bag_size = bag_dataset(args, csv_file_path)
-    #     with torch.no_grad():
-    #         for iteration, batch in enumerate(dataloader):
-    #             patches = batch['input'].float().cuda()
-    #             patch_pos = batch['position']
-    #             feats, classes = milnet.i_classifier(patches)
-    #             feats = feats.cpu().numpy()
-    #             classes = classes.cpu().numpy()
-    #             feats_list.extend(feats)
-    #             pos_list.extend(patch_pos)
-    #             classes_list.extend(classes)
-    #         pos_arr = np.vstack(pos_list)
-    #         feats_arr = np.vstack(feats_list)
-    #         classes_arr = np.vstack(classes_list)
-    #         bag_feats = torch.from_numpy(feats_arr).cuda()
-    #         ins_classes = torch.from_numpy(classes_arr).cuda()
-    #         # bag_prediction, A, _ = milnet.b_classifier(bag_feats, ins_classes)
-    #         # bag_prediction = torch.sigmoid(bag_prediction).squeeze().cpu().numpy()
-    #         bag_prediction, _, _, ins_prediction, _ = psmil(bag_feats, torch.tensor(-1), bag_feats.shape[0], "psa", "TCGA")
-    #         # print(bag_prediction,ins_prediction)
-    #         bag_prediction = torch.argmax(bag_prediction, 1).cpu().numpy()
-    #         ins_prediction = torch.argmax(ins_prediction, 1).cpu().numpy()
-    #         color = [0, 0, 0]
-    #         if bag_prediction == 1:
-    #             print(bags_list[i] + ' is detected as malignant')
-    #             color = [1, 0, 0]
-    #             attentions = ins_prediction
-    #         else:
-    #             attentions = ins_prediction
-    #             print(bags_list[i] + ' is detected as benign')
-    #         color_map = np.zeros((np.amax(pos_arr, 0)[0] + 1, np.amax(pos_arr, 0)[1] + 1, 3))
-    #         # attentions = attentions.cpu().numpy()
-    #         # attentions = exposure.rescale_intensity(attentions, out_range=(0, 1))
-    #         for k, pos in enumerate(pos_arr):
-    #             tile_color = np.asarray(color) * attentions[k]
-    #             color_map[pos[0], pos[1]] = tile_color
-    #         slide_name = bags_list[i].split(os.sep)[-1]
-    #         color_map = transform.resize(color_map, (color_map.shape[0] * 32, color_map.shape[1] * 32), order=0)
-    #         io.imsave(os.path.join('test-c16', 'output', slide_name + '.png'), img_as_ubyte(color_map),
-    #                   check_contrast=False)
+    for i in range(0, num_bags):
+        feats_list = []
+        pos_list = []
+        classes_list = []
+        csv_file_path = glob.glob(os.path.join(bags_list[i], '*.jpg'))
+        dataloader, bag_size = bag_dataset(args, csv_file_path)
+        with torch.no_grad():
+            for iteration, batch in enumerate(dataloader):
+                patches = batch['input'].float().cuda()
+                patch_pos = batch['position']
+                feats, classes = milnet.i_classifier(patches)
+                feats = feats.cpu().numpy()
+                classes = classes.cpu().numpy()
+                feats_list.extend(feats)
+                pos_list.extend(patch_pos)
+                classes_list.extend(classes)
+            pos_arr = np.vstack(pos_list)
+            feats_arr = np.vstack(feats_list)
+            classes_arr = np.vstack(classes_list)
+            bag_feats = torch.from_numpy(feats_arr).cuda()
+            ins_classes = torch.from_numpy(classes_arr).cuda()
+            # bag_prediction, A, _ = milnet.b_classifier(bag_feats, ins_classes)
+            # bag_prediction = torch.sigmoid(bag_prediction).squeeze().cpu().numpy()
+            bag_prediction, _, _, ins_prediction, _ = psmil(bag_feats, torch.tensor(-1), bag_feats.shape[0], "psa", "TCGA")
+            # print(bag_prediction,ins_prediction)
+            bag_prediction = torch.argmax(bag_prediction, 1).cpu().numpy()
+            ins_prediction = torch.argmax(ins_prediction, 1).cpu().numpy()
+            color = [0, 0, 0]
+            if bag_prediction == 1:
+                print(bags_list[i] + ' is detected as malignant')
+                color = [1, 0, 0]
+                attentions = ins_prediction
+            else:
+                attentions = ins_prediction
+                print(bags_list[i] + ' is detected as benign')
+            color_map = np.zeros((np.amax(pos_arr, 0)[0] + 1, np.amax(pos_arr, 0)[1] + 1, 3))
+            # attentions = attentions.cpu().numpy()
+            # attentions = exposure.rescale_intensity(attentions, out_range=(0, 1))
+            for k, pos in enumerate(pos_arr):
+                tile_color = np.asarray(color) * attentions[k]
+                color_map[pos[0], pos[1]] = tile_color
+            slide_name = bags_list[i].split(os.sep)[-1]
+            color_map = transform.resize(color_map, (color_map.shape[0] * 32, color_map.shape[1] * 32), order=0)
+            io.imsave(os.path.join('test-c16', 'output', slide_name + '.png'), img_as_ubyte(color_map),
+                      check_contrast=False)
 
     fold_predictions = []
     for fold_weight in args.weights:
