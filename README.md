@@ -30,7 +30,7 @@ Process finished with exit code 0
 The expected visualization is as follows for test026.jpg:
 ![image](https://github.com/user-attachments/assets/a2ee439f-efd4-4585-aaca-061a3bfe6d58)
 
-PSMIL provides probability outputs for each instance(slide patch), making the visualization very clear.
+PSMIL provides explicit probability outputs for each instance(slide patch), making the visualization very clear.
 
 You could also validate the weights on TCGA dataset(also stored in `weights/20241126`, with the file name corresponding to `logs/TCGA.log`) by customize your own code. But note that there is no fixed test set for TCGA so you may get slightly different performance.
 
