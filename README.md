@@ -44,8 +44,8 @@ Train:
 
 Valitation and Visualization of Camelyon16:
 
-1. Download the file [test-c16](https://uwmadison.box.com/shared/static/q4d9fr93wmllf1navjf2ghc9b0pmzf2a.zip) and unzip the contents to directory `test-c16`.
-2. You could also download the raw test set slides of C16 dataset and proceed by your own to produce the patches you need and put corresponding files to `test-c16`. If you choose to do so, go to [DSMIL]([https://github.com/binli123/dsmil-wsi]) and follow the instructions there.
+1. Download the file [test-c16](https://uwmadison.box.com/shared/static/q4d9fr93wmllf1navjf2ghc9b0pmzf2a.zip) and unzip the contents to directory `test-c16` to provide the independent test data needed.
+2. You could also download the raw test set slides of C16 dataset and proceed by your own to produce the patches you need and put corresponding files to `test-c16`. If you choose to do so, go to [DSMIL]([https://github.com/binli123/dsmil-wsi]) and follow the detailed instructions there.
 3. run `visualize_psmil_c16.py`.
 
 
