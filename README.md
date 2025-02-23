@@ -45,12 +45,12 @@ Train:
 Valitation and Visualization of Camelyon16:
 
 1. Download the file [test-c16](https://uwmadison.box.com/shared/static/q4d9fr93wmllf1navjf2ghc9b0pmzf2a.zip) and unzip the contents to directory `test-c16` to provide the independent test data needed.
-2. You could also download the raw test set slides of C16 dataset and proceed by your own to produce the patches you need and put corresponding files to `test-c16`. If you choose to do so, go to [DSMIL]([https://github.com/binli123/dsmil-wsi]) and follow the detailed instructions there.
+2. You could also download the raw test set slides of C16 dataset and proceed by your own to produce the patches you need and put corresponding files to `test-c16`. If you choose to do so, go to [DSMIL](https://github.com/binli123/dsmil-wsi) and follow the detailed instructions there.
 3. run `visualize_psmil_c16.py`.
 
 
 
-The training/evaluation codes and data are mostly modified from previous work [DSMIL]([https://github.com/binli123/dsmil-wsi]). We would make more instructions here to present our process more clearly:
+The training/evaluation codes and data are mostly modified from previous work [DSMIL](https://github.com/binli123/dsmil-wsi). We would make more instructions here to present our process more clearly:
 
 1. We used the SimCLR 20x features provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) in training set.
 2. We used `model/PSMIL.py` to implement the experiments, which only involves probability space attention.
@@ -64,4 +64,4 @@ Evaluation:
 
 
 
-The implementation of the evaluation code in this version still includes instance label features (see [RGMIL](https://github.com/LMBDA-design/RGMIL/edit/main/README.md) for details). Considering that the mining of these instance label features is still meaningful, we chose to retain this version of the data and re-implement all mainstream methods.
+The implementation of the evaluation code in this version still includes instance label features (see [RGMIL](https://github.com/LMBDA-design/RGMIL) for details). Considering that the mining of these instance label features is still meaningful, we chose to retain this version of the data and re-implement all mainstream methods.
