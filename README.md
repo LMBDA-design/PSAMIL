@@ -45,7 +45,7 @@ Train:
 
 
 
-The training/evaluation codes and data are mostly modified from previous work [DSMIL]([https://arxiv.org/abs/2307.1402](https://github.com/binli123/dsmil-wsi?tab=readme-ov-file)5)
+The training/evaluation codes and data are mostly modified from previous work [DSMIL]([https://github.com/binli123/dsmil-wsi])
 
 You can put MNIST raw dataset under directory "datasets" first.
 
