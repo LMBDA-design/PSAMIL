@@ -4,7 +4,8 @@
 
 ### Camelyon16/TCGA-Lung-Cancer
 
-These are two large-scale publicly available medical datasets. The training logs are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log` for your validation. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
+#### Introduction
+These are two large-scale publicly available medical datasets. The training logs are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected SOTA output is as follows:
 
 ```
 D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\testingnewc16.py 
@@ -33,7 +34,18 @@ PSMIL provides probability outputs for each instance(slide patch), making the vi
 
 You could also validate the weights on TCGA dataset(also stored in `weights/20241126`, with the file name corresponding to `logs/TCGA.log`) by customize your own code. But note that there is no fixed test set for TCGA so you may get slightly different performance.
 
+#### How to
 
+Train:
+
+1. Download the files to dir
+
+2. run `traincancer.py`
+
+
+
+
+The training/evaluation codes and data are mostly modified from previous work [DSMIL]([https://arxiv.org/abs/2307.1402](https://github.com/binli123/dsmil-wsi?tab=readme-ov-file)5)
 
 You can put MNIST raw dataset under directory "datasets" first.
 
