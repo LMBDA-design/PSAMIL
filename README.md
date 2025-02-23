@@ -60,4 +60,8 @@ The training/evaluation codes and data are mostly modified from previous work [D
 
 ### Simple Benchmarks MUSK1,MUSK2,FOX,TIGER,ELEPHANT
 
+Evaluation:
 
+
+
+The implementation of the evaluation code in this version still includes instance label features (see [RGMIL](https://github.com/LMBDA-design/RGMIL/edit/main/README.md) for details). Considering that the mining of these instance label features is still meaningful, we chose to retain this version of the data and re-implement all mainstream methods.
