@@ -4,7 +4,7 @@
 
 ### Camelyon16/TCGA-Lung-Cancer
 
-These are two large-scale publicly available medical datasets. The training logs are presented in the directories logs/CAMELYON16.log and logs/TCGA.log for your validation. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, which is why we provide the independent validation and visualization code for the CAMELYON16 data. The expected output is as follows:
+These are two large-scale publicly available medical datasets. The training logs are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log` for your validation. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, which is why we provide the independent validation and visualization code for the CAMELYON16 data. The expected output is as follows:
 
 ```
 D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\testingnewc16.py 
