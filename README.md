@@ -32,7 +32,7 @@ The expected visualization is as follows for test026.jpg:
 
 PSMIL provides explicit probability outputs for each instance(slide patch), making the visualization very clear.
 
-You could also validate the weights on TCGA dataset(also stored in `weights/20241126`, with the file name corresponding to `logs/TCGA.log`) by customize your own code. But note that there is no fixed test set for TCGA so you may get slightly different performance.
+You could also validate the weights on TCGA dataset(also stored in `weights/20241126`, with the weights file name corresponding to `logs/TCGA.log`) by customize your own code. But note that there is no fixed test set for TCGA so you may get slightly different performance.
 
 #### How to
 
