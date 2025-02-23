@@ -38,7 +38,7 @@ You could also validate the weights on TCGA dataset(also stored in `weights/2024
 
 Train:
 
-1. Download the files to dir
+1. Download the files [TCGA-Dataset](https://uwmadison.box.com/shared/static/tze4yqclajbdzjwxyb8b1umfwk9vcdwq.zip) and [Camelyon16_Dataset](https://uwmadison.box.com/shared/static/tze4yqclajbdzjwxyb8b1umfwk9vcdwq.zip) to dir
 
 2. run `traincancer.py`
 
