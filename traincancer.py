@@ -329,7 +329,6 @@ def main():
                     best_ac = avg_score
                     best_auc = aucs
                     save_model(args, fold, run, save_path, milnet, thresholds_optimal)
-                # if counter > args.stop_epochs: break
             fold_results.append((best_ac, best_auc))
         mean_ac = np.mean(np.array([i[0] for i in fold_results]))
         mean_auc = np.mean(np.array([i[1] for i in fold_results]), axis=0)
@@ -381,7 +380,6 @@ def main():
                     best_auc = aucs
                     save_model(args, iteration, run, save_path, milnet, thresholds_optimal)
                     best_model = copy.deepcopy(milnet)
-                if counter > args.stop_epochs: break
             test_loss_bag, avg_score, aucs, thresholds_optimal = test(test_path, best_model, criterion, args)
             fold_results.append((best_ac, best_auc))
         mean_ac = np.mean(np.array([i[0] for i in fold_results]))
@@ -416,16 +414,13 @@ def main():
             fold_best_score = 0
             best_ac = 0
             best_auc = 0
-            counter = 0
             best_model = []
 
             for epoch in range(1, args.num_epochs + 1):
-                counter += 1
                 train_loss_bag = train(args, train_path, milnet, criterion, optimizer)  # iterate all bags
                 test_loss_bag, avg_score, aucs, thresholds_optimal = test(args, test_path, milnet, criterion)
 
                 print_epoch_info(epoch, args, train_loss_bag, test_loss_bag, avg_score, aucs)
-                # scheduler.step()
 
                 current_score = get_current_score(avg_score, aucs)
                 if current_score > fold_best_score:
@@ -436,7 +431,6 @@ def main():
                     save_model(args, fold, run, save_path, milnet, thresholds_optimal)
                     best_model = [copy.deepcopy(milnet.cpu()), thresholds_optimal]
                     milnet.cuda()
-                # if counter > args.stop_epochs: break
             fold_results.append((best_ac, best_auc))
             fold_models.append(best_model)
 
