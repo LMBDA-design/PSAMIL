@@ -243,7 +243,7 @@ def main():
     parser.add_argument('--gpu_index', type=int, nargs='+', default=(0,), help='GPU ID(s) [0]')
     parser.add_argument('--weight_decay', default=1e-3, type=float, help='Weight decay [1e-3]')
     parser.add_argument('--dataset', default='Camelyon16', type=str, help='Dataset folder name')
-    parser.add_argument('--split', default=0.25, type=float, help='Training/Validation split [0.2]')
+    parser.add_argument('--split', default=0.2, type=float, help='Training/Validation split [0.2]')
     parser.add_argument('--model', default='psmil', type=str, help='MIL model [dsmil]')
     parser.add_argument('--dropout_patch', default=0, type=float, help='Patch dropout rate [0]')
     parser.add_argument('--dropout_node', default=0, type=float, help='Bag classifier dropout rate [0]')
