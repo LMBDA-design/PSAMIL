@@ -83,6 +83,6 @@ Coming soon.
 Validation:
 We presented different logs under directory `logs/simulated_cifar`, which contains key version of attention-based MIL models.
 
-The "fsa" means feature-space attention(corresponding to "-pooling" option param), "RL" means unfreeze the encoder(corresponding to "-finetune" option param), and "probalign" means probability-space alignment term(corresponding to "-cl" option param).
+The "fsa" means feature-space attention(corresponding to `-pooling` option param), "RL" means unfreeze the encoder(corresponding to `-finetune` option param), and "probalign" means probability-space alignment term(corresponding to `-cl` option param).
 
 You can validate by weights we provided, with codes/weights comming soon.
