@@ -4,7 +4,9 @@
 
 ### Camelyon16/TCGA-Lung-Cancer
 By applying Probability-space Attention(`model\PSMIL.py`):
+
 1.PSMIL is able to provide explicit inference output for each instance inside, without damage to decent bag-level performance.
+
 2.PSMIL provides better visualization and interpretability under multi-instance mode. 
 
 #### Introduction
