@@ -3,6 +3,9 @@
 ## Public Dataset Experiments
 
 ### Camelyon16/TCGA-Lung-Cancer
+By applying Probability-space Attention(`model\PSMIL.py`):
+1.PSMIL is able to provide explicit inference output for each instance inside, without damage to decent bag-level performance.
+2.PSMIL provides better visualization and interpretability under multi-instance mode. 
 
 #### Introduction
 These are two large-scale publicly available medical datasets. The detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
