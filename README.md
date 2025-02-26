@@ -80,15 +80,17 @@ Coming soon.
 2. While the alignment term would bring robustness, you should carefully tune the hyperparameter lambda to gain better performance.
 3. Also, you could use probability-space attention to solve the degradation issue. Apply appropriate augmentation would further improve performance.
 
-Validation:
+`logs/simulated_cifar`:
+
 We presented different logs under directory `logs/simulated_cifar`, which contains key version of attention-based MIL models.
 
 The "fsa" means feature-space attention(corresponding to `-pooling` option param), "RL" means unfreeze the encoder(corresponding to `-finetune` option param), and "probalign" means probability-space alignment term(corresponding to `-cl` option param).
 
+
+Run  `visualize_psmil_cifar.py` to test the performance, with weights loaded corresponding to different version shown in `logs/simulated_cifar`.
+
 One possible visualization:
 
 ![image](https://github.com/user-attachments/assets/78b6db23-a6ac-403f-a0db-6c12d9bea9b9)
-
-Run  `visualize_psmil_cifar.py` to test the performance, with weights loaded corresponding to different version shown in `logs/simulated_cifar`.
 
 Weights comming soon.
