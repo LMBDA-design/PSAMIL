@@ -6,7 +6,6 @@ from datasets.MILDataset import MILDataset, UNBCBagDataset, get_sampler
 from datasets.svhn import MY_SVHN
 from datasets.fmnist import MY_FMNIST
 import torch.utils.data as data_utils
-from tinyimagenet import TinyImageNet
 import torchvision.datasets as datasets
 from tqdm import tqdm
 from model.PSAMIL import PSAMIL, visualize_clusters
