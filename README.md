@@ -66,17 +66,23 @@ The training/evaluation codes and data are mostly modified from previous work [D
 
 ### Simple Benchmarks MUSK1,MUSK2,FOX,TIGER,ELEPHANT
 
+1.The implementation of the evaluation code in this version includes instance label feature. Considering that the mining of these instance label features is still meaningful, we chose to retain this version of the data and re-implement all mainstream methods.
+
+
 Evaluation:
+Coming soon.
 
 
-
-
-
-Note: The implementation of the evaluation code in this version includes instance label feature. Considering that the mining of these instance label features is still meaningful, we chose to retain this version of the data provided in [RGMIL](https://github.com/LMBDA-design/RGMIL) and re-implement all mainstream methods.
 
 ## Simulated Dataset Experiments
 
-1. If your model faces degradation issue when unfreeze the feature encoder, augment your input and align to achieve stable performance. The ABMILs all tends to face this problem easily.
-2. While the augment term would bring robustness, you should carefully tune the hyperparameter lambda to gain better performance.
-3. Also, you could use probability space attention to solve the degradation issue. Apply appropriate augmentation would further improve performance.
-   
+1. If your model faces degradation issue when unfreeze the feature encoder, augment your input and align to achieve stable performance. You may find the ABMILs all tends to face this problem easily.
+2. While the alignment term would bring robustness, you should carefully tune the hyperparameter lambda to gain better performance.
+3. Also, you could use probability-space attention to solve the degradation issue. Apply appropriate augmentation would further improve performance.
+
+Validation:
+We presented different logs under directory `logs/simulated_cifar`, which contains key version of attention-based MIL models.
+
+The "fsa" means feature-space attention(corresponding to "-pooling" option param), "RL" means unfreeze the encoder(corresponding to "-finetune" option param), and "probalign" means probability-space alignment term(corresponding to "-cl" option param).
+
+You can validate by weights we provided, with codes/weights comming soon.
