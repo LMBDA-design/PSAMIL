@@ -85,4 +85,10 @@ We presented different logs under directory `logs/simulated_cifar`, which contai
 
 The "fsa" means feature-space attention(corresponding to `-pooling` option param), "RL" means unfreeze the encoder(corresponding to `-finetune` option param), and "probalign" means probability-space alignment term(corresponding to `-cl` option param).
 
-You can validate by weights we provided, with codes/weights comming soon.
+One possible visualization:
+
+![image](https://github.com/user-attachments/assets/78b6db23-a6ac-403f-a0db-6c12d9bea9b9)
+
+Run  `visualize_psmil_cifar.py` to test the performance, with weights loaded corresponding to different version shown in `logs/simulated_cifar`.
+
+Weights comming soon.
