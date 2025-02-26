@@ -124,31 +124,12 @@ if args.start > 0:
         pretrained_weights = torch.load(Finetune_weights_path)
         model.load_state_dict(pretrained_weights)
         print("load success!")
-        # print(model.attention[0].weight)
-    # ins_optimizer = optim.Adam(model.stem.parameters(), lr=1e-3,
-    #                            betas=(0.9, 0.999))
-    # ins_optimizer = optim.Adam(model.stem.parameters(), lr=args.lr)
-    # ins_criterion = torch.nn.NLLLoss(reduction='none')
 
 # Define the loss function and optimizer
 bag_criterion = torch.nn.NLLLoss()
 # bag_criterion = torch.nn.NLLLoss(weight=torch.Tensor([1,2,2,10]).to(device))
-# ins_loss = torch.nn.KLDivLoss(reduction='batchmean')
 ins_loss = torch.nn.CrossEntropyLoss()
 bag_optimizer = torch.optim.SGD(model.parameters(), lr=args.lr, momentum=0.9, weight_decay=1e-4)
-# bag_optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
-# attention_based_params = list(map(id, model.attention_based.parameters()))
-#
-# # 获取模型其余部分的参数
-# base_params = filter(lambda p: id(p) not in attention_based_params, model.parameters())
-#
-# # 创建优化器，为不同的参数组设置不同的学习率
-# bag_optimizer = torch.optim.SGD([
-#     {"params": base_params},
-#     {"params": model.attention_based.parameters(), "lr": 0.1}
-# ], lr=args.lr, momentum=0.9)
-# scheduler
-scheduler = torch.optim.lr_scheduler.MultiStepLR(bag_optimizer, milestones=[-1], last_epoch=-1)
 
 
 def save_model(model, path):
@@ -454,7 +435,6 @@ for epoch in range(args.epochs):
     # visualize_clusters(model, test_loader, "PSMIL")
     # visualize_clusters(model, test_loader,"SVHN")
     c_w, c_dev = train(epoch)
-    scheduler.step()
     acc = test(0)
     accs.append(acc)
     c_ws.append(c_w)
