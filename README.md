@@ -71,4 +71,7 @@ Note: The implementation of the evaluation code in this version includes instanc
 
 ## Simulated Dataset Experiments
 
-
+1. If your model faces degradation issue when unfreeze the feature encoder, augment your input and align to achieve stable performance. The ABMILs all tends to face this problem easily.
+2. While the augment term would bring robustness, you should carefully tune the hyperparameter lambda to gain better performance.
+3. Also, you could use probability space attention to solve the degradation issue.
+   
