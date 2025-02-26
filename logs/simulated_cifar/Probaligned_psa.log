@@ -1,0 +1,579 @@
+D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\exec.py 
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]epoch,lam =  0 0 0.0
+Train Epoch 0:   0%|          | 1/10000 [00:01<5:11:26,  1.87s/it, Training loss=1.29, critical_weights=1, std=0]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:10:45<00:00,  2.36it/s, Training loss=2.96, critical_weights=0.175, std=0.00196]
+Test Accuracy: 13.69
+[0.1369] [0.17481565539315344] [0.001962112731390084]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]load success!
+backbone need grad!
+epoch,lam =  1 0 0.01
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:42:31<00:00,  1.63it/s, Training loss=0.753, critical_weights=0.28, std=0.0122]
+Test Accuracy: 82.56
+[0.8256] [0.2797351923722774] [0.012202578230320438]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+backbone need grad!
+epoch,lam =  2 0 0.02
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:43:44<00:00,  1.61it/s, Training loss=0.102, critical_weights=0.312, std=0.0152]
+Test Accuracy: 83.51
+[0.8351] [0.31226480324938893] [0.015202155044704093]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+backbone need grad!
+epoch,lam =  3 0 0.03
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:41:17<00:00,  1.65it/s, Training loss=0.0888, critical_weights=0.321, std=0.0133]
+Test Accuracy: 85.0
+[0.85] [0.32126489710137246] [0.013253259194490736]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+backbone need grad!
+epoch,lam =  4 0 0.04
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:39:49<00:00,  1.67it/s, Training loss=0.101, critical_weights=0.234, std=0.00702]
+Test Accuracy: 86.12
+[0.8612] [0.23444617875292897] [0.007023207019387337]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+backbone need grad!
+epoch,lam =  5 0 0.05
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:34:31<00:00,  1.76it/s, Training loss=0.124, critical_weights=0.217, std=0.00437]
+Test Accuracy: 86.15
+[0.8615] [0.21727470460701734] [0.004365033862167453]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+backbone need grad!
+epoch,lam =  6 0 0.06
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:28:11<00:00,  1.89it/s, Training loss=0.135, critical_weights=0.22, std=0.0043]
+Test Accuracy: 86.16
+[0.8616] [0.2204236278180033] [0.00430378512059914]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+backbone need grad!
+epoch,lam =  7 0 0.07
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:34:06<00:00,  1.77it/s, Training loss=0.158, critical_weights=0.282, std=0.00553]
+Test Accuracy: 87.3
+[0.873] [0.2816302818708122] [0.005526253301951169]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+backbone need grad!
+epoch,lam =  8 0 0.08
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:40:34<00:00,  1.66it/s, Training loss=0.177, critical_weights=0.287, std=0.00533]
+Test Accuracy: 87.89
+[0.8789] [0.2865454656369984] [0.005327203411394624]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]load success!
+backbone need grad!
+epoch,lam =  9 0 0.09
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:38:14<00:00,  1.70it/s, Training loss=0.202, critical_weights=0.304, std=0.00542]
+Test Accuracy: 86.13
+[0.8613] [0.3040054353967309] [0.005424701254552793]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+backbone need grad!
+epoch,lam =  10 0 0.1
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:36:06<00:00,  1.73it/s, Training loss=0.223, critical_weights=0.326, std=0.00608]
+Test Accuracy: 87.02
+[0.8702] [0.3255554251626134] [0.0060823567635594645]
+D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\exec.py 
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Test Accuracy: 86.36
+backbone need grad!
+epoch,lam =  10 0 0.1
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:40:20<00:00,  1.66it/s, Training loss=0.219, critical_weights=0.298, std=0.00506]
+Test Accuracy: 87.57
+[0.8757] [0.2981349971689284] [0.005059943213121873]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Test Accuracy: 87.88
+backbone need grad!
+epoch,lam =  11 0 0.1
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:25:28<00:00,  1.95it/s, Training loss=0.22, critical_weights=0.297, std=0.00475]
+Test Accuracy: 87.82
+[0.8782] [0.2973825074836612] [0.004754618567115299]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 87.74
+backbone need grad!
+epoch,lam =  12 0 0.1
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:43:16<00:00,  1.61it/s, Training loss=0.22, critical_weights=0.297, std=0.0047]
+Test Accuracy: 88.03
+[0.8803] [0.2967461899504065] [0.00470352008271229]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Test Accuracy: 87.95
+backbone need grad!
+epoch,lam =  13 0 0.1
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:35:07<00:00,  1.75it/s, Training loss=0.221, critical_weights=0.297, std=0.00463]
+Test Accuracy: 88.25
+[0.8825] [0.29721857875213026] [0.004625356610375537]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 88.08
+backbone need grad!
+epoch,lam =  14 0 0.1
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:45:02<00:00,  1.59it/s, Training loss=0.22, critical_weights=0.294, std=0.00441]
+Test Accuracy: 88.59
+[0.8859] [0.29422340174391864] [0.004413141317710968]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 88.37
+backbone need grad!
+epoch,lam =  15 0 0.1
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:41:05<00:00,  1.65it/s, Training loss=0.221, critical_weights=0.294, std=0.00444]
+Test Accuracy: 88.13
+[0.8813] [0.29410042914971707] [0.004441792904587445]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Test Accuracy: 88.19
+backbone need grad!
+epoch,lam =  16 0 0.1
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:40:40<00:00,  1.66it/s, Training loss=0.221, critical_weights=0.293, std=0.00437]
+Test Accuracy: 88.62
+[0.8862] [0.29300929203927517] [0.004372921370693957]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 88.44
+backbone need grad!
+epoch,lam =  17 0 0.1
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:45:16<00:00,  1.58it/s, Training loss=0.221, critical_weights=0.293, std=0.00417]
+Test Accuracy: 88.41
+[0.8841] [0.29258479829132555] [0.0041662952756535004]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Test Accuracy: 88.42
+backbone need grad!
+epoch,lam =  18 0 0.1
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:30:39<00:00,  1.84it/s, Training loss=0.222, critical_weights=0.293, std=0.00422]
+Test Accuracy: 88.6
+[0.886] [0.2926255145203322] [0.00421665466076616]
+=== Training Settings ===
+Epochs: 1
+Learning Rate: 0.001
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: psa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  True
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+load success!
+Test Accuracy: 88.44
+backbone need grad!
+epoch,lam =  19 0 0.1
+Train Epoch 0:   0%|          | 0/10000 [00:00<?, ?it/s]D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\nn\utils\clip_grad.py:39: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  grads = [p.grad for p in parameters if p.grad is not None]
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torch\optim\sgd.py:41: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+Train Epoch 0: 100%|██████████| 10000/10000 [1:35:21<00:00,  1.75it/s, Training loss=0.221, critical_weights=0.292, std=0.00405]
+Test Accuracy: 88.55
+[0.8855] [0.29226279076859357] [0.00405289306833647]
+ 
+Process finished with exit code 0
