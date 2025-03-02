@@ -1,0 +1,1574 @@
+D:\study\codes\work2\dsmil-wsi-master\venv\Scripts\python.exe D:\study\codes\work2\dsmil-wsi-master\trainnewtcga.py 
+5-fold-cv-standalone-test
+Starting CV fold 0.
+ Testing bag [209/210] bag loss: 1.4972ROC AUC score: 0.6813516214006721
+ROC AUC score: 0.6813516214006723
+ Epoch [1/100] train loss: 4.8856 test loss: 0.7113, average score: 0.5381, auc_LUAD: 0.6814, auc_LUSC: 0.6814
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.2296, LUSC 0.7707
+ Testing bag [209/210] bag loss: 0.2430ROC AUC score: 0.9522209101644109
+ROC AUC score: 0.9522209101644109
+ Epoch [2/100] train loss: 0.4818 test loss: 0.3397, average score: 0.8714, auc_LUAD: 0.9522, auc_LUSC: 0.9522
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5471, LUSC 0.4607
+ Testing bag [209/210] bag loss: 0.1328ROC AUC score: 0.9645744390952857
+ROC AUC score: 0.9645744390952857
+ Epoch [3/100] train loss: 0.3397 test loss: 0.2773, average score: 0.9048, auc_LUAD: 0.9646, auc_LUSC: 0.9646
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5281, LUSC 0.4863
+ Testing bag [209/210] bag loss: 0.0371ROC AUC score: 0.9692978472159142
+ROC AUC score: 0.9692978472159143
+ Epoch [4/100] train loss: 0.3051 test loss: 0.2952, average score: 0.8667, auc_LUAD: 0.9693, auc_LUSC: 0.9693
+ Testing bag [209/210] bag loss: 0.0751ROC AUC score: 0.9718412208193297
+ROC AUC score: 0.9718412208193297
+ Epoch [5/100] train loss: 0.2911 test loss: 0.2386, average score: 0.9190, auc_LUAD: 0.9718, auc_LUSC: 0.9718
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.4863, LUSC 0.5184
+ Testing bag [209/210] bag loss: 0.1141ROC AUC score: 0.9726587337632846
+ROC AUC score: 0.9726587337632846
+ Epoch [6/100] train loss: 0.2804 test loss: 0.2718, average score: 0.8714, auc_LUAD: 0.9727, auc_LUSC: 0.9727
+ Testing bag [209/210] bag loss: 0.0372ROC AUC score: 0.9729312380779362
+ROC AUC score: 0.9729312380779362
+ Epoch [7/100] train loss: 0.2717 test loss: 0.2197, average score: 0.9333, auc_LUAD: 0.9729, auc_LUSC: 0.9729
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5063, LUSC 0.5084
+ Testing bag [209/210] bag loss: 0.0230ROC AUC score: 0.9739304205649923
+ROC AUC score: 0.9739304205649923
+ Epoch [8/100] train loss: 0.2722 test loss: 0.2173, average score: 0.9286, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [209/210] bag loss: 0.0420ROC AUC score: 0.9738395857934418
+ROC AUC score: 0.9738395857934418
+ Epoch [9/100] train loss: 0.2636 test loss: 0.2243, average score: 0.9048, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [209/210] bag loss: 0.0255ROC AUC score: 0.9745662639658461
+ROC AUC score: 0.9745662639658461
+ Epoch [10/100] train loss: 0.2627 test loss: 0.2101, average score: 0.9286, auc_LUAD: 0.9746, auc_LUSC: 0.9746
+ Testing bag [209/210] bag loss: 0.0261ROC AUC score: 0.9748387682804978
+ROC AUC score: 0.9748387682804978
+ Epoch [11/100] train loss: 0.2611 test loss: 0.2111, average score: 0.9238, auc_LUAD: 0.9748, auc_LUSC: 0.9748
+ Testing bag [209/210] bag loss: 0.0054ROC AUC score: 0.9749296030520482
+ROC AUC score: 0.9749296030520483
+ Epoch [12/100] train loss: 0.2589 test loss: 0.2560, average score: 0.8857, auc_LUAD: 0.9749, auc_LUSC: 0.9749
+ Testing bag [209/210] bag loss: 0.0418ROC AUC score: 0.9751112725951494
+ROC AUC score: 0.9751112725951494
+ Epoch [13/100] train loss: 0.2536 test loss: 0.2449, average score: 0.8857, auc_LUAD: 0.9751, auc_LUSC: 0.9751
+ Testing bag [209/210] bag loss: 0.0245ROC AUC score: 0.9752021073667
+ROC AUC score: 0.9752021073667
+ Epoch [14/100] train loss: 0.2520 test loss: 0.2154, average score: 0.9048, auc_LUAD: 0.9752, auc_LUSC: 0.9752
+ Testing bag [209/210] bag loss: 0.0047ROC AUC score: 0.9752021073667001
+ROC AUC score: 0.9752021073667
+ Epoch [15/100] train loss: 0.2555 test loss: 0.2359, average score: 0.9000, auc_LUAD: 0.9752, auc_LUSC: 0.9752
+ Testing bag [209/210] bag loss: 0.0106ROC AUC score: 0.9752929421382506
+ROC AUC score: 0.9752929421382506
+ Epoch [16/100] train loss: 0.2547 test loss: 0.1992, average score: 0.9333, auc_LUAD: 0.9753, auc_LUSC: 0.9753
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.4294, LUSC 0.5790
+ Testing bag [209/210] bag loss: 0.0062ROC AUC score: 0.9752021073667001
+ROC AUC score: 0.9752021073667
+ Epoch [17/100] train loss: 0.2535 test loss: 0.2084, average score: 0.9238, auc_LUAD: 0.9752, auc_LUSC: 0.9752
+ Testing bag [209/210] bag loss: 0.0074ROC AUC score: 0.9752929421382506
+ROC AUC score: 0.9752929421382506
+ Epoch [18/100] train loss: 0.2549 test loss: 0.2008, average score: 0.9333, auc_LUAD: 0.9753, auc_LUSC: 0.9753
+ Testing bag [209/210] bag loss: 0.0056ROC AUC score: 0.975383776909801
+ROC AUC score: 0.975383776909801
+ Epoch [19/100] train loss: 0.2489 test loss: 0.2064, average score: 0.9238, auc_LUAD: 0.9754, auc_LUSC: 0.9754
+ Testing bag [209/210] bag loss: 0.0059ROC AUC score: 0.9752929421382506
+ROC AUC score: 0.9752929421382506
+ Epoch [20/100] train loss: 0.2497 test loss: 0.2027, average score: 0.9381, auc_LUAD: 0.9753, auc_LUSC: 0.9753
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5372, LUSC 0.5040
+ Testing bag [209/210] bag loss: 0.0188ROC AUC score: 0.975383776909801
+ROC AUC score: 0.975383776909801
+ Epoch [21/100] train loss: 0.2549 test loss: 0.2171, average score: 0.9095, auc_LUAD: 0.9754, auc_LUSC: 0.9754
+ Testing bag [209/210] bag loss: 0.0039ROC AUC score: 0.9752929421382506
+ROC AUC score: 0.9752929421382506
+ Epoch [22/100] train loss: 0.2434 test loss: 0.2144, average score: 0.9048, auc_LUAD: 0.9753, auc_LUSC: 0.9753
+ Testing bag [209/210] bag loss: 0.0146ROC AUC score: 0.9755654464529022
+ROC AUC score: 0.9755654464529022
+ Epoch [23/100] train loss: 0.2543 test loss: 0.2074, average score: 0.9095, auc_LUAD: 0.9756, auc_LUSC: 0.9756
+ Testing bag [209/210] bag loss: 0.0054ROC AUC score: 0.9755654464529022
+ROC AUC score: 0.9755654464529022
+ Epoch [24/100] train loss: 0.2537 test loss: 0.1991, average score: 0.9381, auc_LUAD: 0.9756, auc_LUSC: 0.9756
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5092, LUSC 0.5174
+ Testing bag [209/210] bag loss: 0.0053ROC AUC score: 0.9757471159960033
+ROC AUC score: 0.9757471159960033
+ Epoch [25/100] train loss: 0.2549 test loss: 0.1989, average score: 0.9381, auc_LUAD: 0.9757, auc_LUSC: 0.9757
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5075, LUSC 0.5157
+ Testing bag [209/210] bag loss: 0.0210ROC AUC score: 0.9756562812244528
+ROC AUC score: 0.9756562812244527
+ Epoch [26/100] train loss: 0.2518 test loss: 0.2312, average score: 0.9048, auc_LUAD: 0.9757, auc_LUSC: 0.9757
+ Testing bag [209/210] bag loss: 0.0055ROC AUC score: 0.9758379507675539
+ROC AUC score: 0.9758379507675539
+ Epoch [27/100] train loss: 0.2553 test loss: 0.1961, average score: 0.9381, auc_LUAD: 0.9758, auc_LUSC: 0.9758
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.4768, LUSC 0.5393
+ Testing bag [209/210] bag loss: 0.0023ROC AUC score: 0.9758379507675539
+ROC AUC score: 0.9758379507675539
+ Epoch [28/100] train loss: 0.2508 test loss: 0.2377, average score: 0.9000, auc_LUAD: 0.9758, auc_LUSC: 0.9758
+ Testing bag [209/210] bag loss: 0.0056ROC AUC score: 0.9759287855391043
+ROC AUC score: 0.9759287855391043
+ Epoch [29/100] train loss: 0.2525 test loss: 0.1949, average score: 0.9381, auc_LUAD: 0.9759, auc_LUSC: 0.9759
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.4611, LUSC 0.5486
+ Testing bag [209/210] bag loss: 0.0129ROC AUC score: 0.9759287855391043
+ROC AUC score: 0.9759287855391043
+ Epoch [30/100] train loss: 0.2530 test loss: 0.2065, average score: 0.9095, auc_LUAD: 0.9759, auc_LUSC: 0.9759
+ Testing bag [209/210] bag loss: 0.0026ROC AUC score: 0.976019620310655
+ROC AUC score: 0.9760196203106549
+ Epoch [31/100] train loss: 0.2462 test loss: 0.2222, average score: 0.8905, auc_LUAD: 0.9760, auc_LUSC: 0.9760
+ Testing bag [209/210] bag loss: 0.0108ROC AUC score: 0.9759287855391043
+ROC AUC score: 0.9759287855391043
+ Epoch [32/100] train loss: 0.2492 test loss: 0.2004, average score: 0.9238, auc_LUAD: 0.9759, auc_LUSC: 0.9759
+ Testing bag [209/210] bag loss: 0.0055ROC AUC score: 0.9759287855391044
+ROC AUC score: 0.9759287855391043
+ Epoch [33/100] train loss: 0.2497 test loss: 0.1926, average score: 0.9333, auc_LUAD: 0.9759, auc_LUSC: 0.9759
+ Testing bag [209/210] bag loss: 0.0033ROC AUC score: 0.9760196203106549
+ROC AUC score: 0.9760196203106549
+ Epoch [34/100] train loss: 0.2488 test loss: 0.2052, average score: 0.9238, auc_LUAD: 0.9760, auc_LUSC: 0.9760
+ Testing bag [209/210] bag loss: 0.0044ROC AUC score: 0.9760196203106549
+ROC AUC score: 0.9760196203106549
+ Epoch [35/100] train loss: 0.2550 test loss: 0.1953, average score: 0.9381, auc_LUAD: 0.9760, auc_LUSC: 0.9760
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.6315, LUSC 0.3708
+ Testing bag [209/210] bag loss: 0.0062ROC AUC score: 0.976019620310655
+ROC AUC score: 0.9760196203106549
+ Epoch [36/100] train loss: 0.2504 test loss: 0.1913, average score: 0.9381, auc_LUAD: 0.9760, auc_LUSC: 0.9760
+ Testing bag [209/210] bag loss: 0.0026ROC AUC score: 0.9759287855391044
+ROC AUC score: 0.9759287855391043
+ Epoch [37/100] train loss: 0.2487 test loss: 0.2147, average score: 0.8952, auc_LUAD: 0.9759, auc_LUSC: 0.9759
+ Testing bag [209/210] bag loss: 0.0048ROC AUC score: 0.9759287855391044
+ROC AUC score: 0.9759287855391043
+ Epoch [38/100] train loss: 0.2534 test loss: 0.1923, average score: 0.9381, auc_LUAD: 0.9759, auc_LUSC: 0.9759
+ Testing bag [209/210] bag loss: 0.0195ROC AUC score: 0.9763829593968572
+ROC AUC score: 0.9763829593968572
+ Epoch [39/100] train loss: 0.2512 test loss: 0.2387, average score: 0.9000, auc_LUAD: 0.9764, auc_LUSC: 0.9764
+ Testing bag [209/210] bag loss: 0.0121ROC AUC score: 0.9763829593968572
+ROC AUC score: 0.9763829593968572
+ Epoch [40/100] train loss: 0.2505 test loss: 0.2086, average score: 0.9095, auc_LUAD: 0.9764, auc_LUSC: 0.9764
+ Testing bag [209/210] bag loss: 0.0010ROC AUC score: 0.9761104550822055
+ROC AUC score: 0.9761104550822055
+ Epoch [41/100] train loss: 0.2478 test loss: 0.2938, average score: 0.8714, auc_LUAD: 0.9761, auc_LUSC: 0.9761
+ Testing bag [209/210] bag loss: 0.0097ROC AUC score: 0.9762921246253067
+ROC AUC score: 0.9762921246253065
+ Epoch [42/100] train loss: 0.2491 test loss: 0.2005, average score: 0.9238, auc_LUAD: 0.9763, auc_LUSC: 0.9763
+ Testing bag [209/210] bag loss: 0.0075ROC AUC score: 0.9762921246253067
+ROC AUC score: 0.9762921246253065
+ Epoch [43/100] train loss: 0.2499 test loss: 0.1929, average score: 0.9333, auc_LUAD: 0.9763, auc_LUSC: 0.9763
+ Testing bag [209/210] bag loss: 0.0120ROC AUC score: 0.9763829593968572
+ROC AUC score: 0.976382959396857
+ Epoch [44/100] train loss: 0.2479 test loss: 0.2103, average score: 0.9143, auc_LUAD: 0.9764, auc_LUSC: 0.9764
+ Testing bag [209/210] bag loss: 0.0072ROC AUC score: 0.9765646289399583
+ROC AUC score: 0.9765646289399581
+ Epoch [45/100] train loss: 0.2475 test loss: 0.1921, average score: 0.9333, auc_LUAD: 0.9766, auc_LUSC: 0.9766
+ Testing bag [209/210] bag loss: 0.0050ROC AUC score: 0.9765646289399583
+ROC AUC score: 0.9765646289399581
+ Epoch [46/100] train loss: 0.2528 test loss: 0.1894, average score: 0.9333, auc_LUAD: 0.9766, auc_LUSC: 0.9766
+ Testing bag [209/210] bag loss: 0.0011ROC AUC score: 0.9766554637115088
+ROC AUC score: 0.9766554637115087
+ Epoch [47/100] train loss: 0.2459 test loss: 0.2725, average score: 0.8714, auc_LUAD: 0.9767, auc_LUSC: 0.9767
+ Testing bag [209/210] bag loss: 0.0033ROC AUC score: 0.9766554637115088
+ROC AUC score: 0.9766554637115087
+ Epoch [48/100] train loss: 0.2561 test loss: 0.1964, average score: 0.9286, auc_LUAD: 0.9767, auc_LUSC: 0.9767
+ Testing bag [209/210] bag loss: 0.0062ROC AUC score: 0.97683713325461
+ROC AUC score: 0.9768371332546097
+ Epoch [49/100] train loss: 0.2459 test loss: 0.1896, average score: 0.9381, auc_LUAD: 0.9768, auc_LUSC: 0.9768
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5208, LUSC 0.4932
+ Testing bag [209/210] bag loss: 0.0118ROC AUC score: 0.9767462984830594
+ROC AUC score: 0.9767462984830593
+ Epoch [50/100] train loss: 0.2481 test loss: 0.2104, average score: 0.9143, auc_LUAD: 0.9767, auc_LUSC: 0.9767
+ Testing bag [209/210] bag loss: 0.0055ROC AUC score: 0.97683713325461
+ROC AUC score: 0.9768371332546097
+ Epoch [51/100] train loss: 0.2496 test loss: 0.1884, average score: 0.9381, auc_LUAD: 0.9768, auc_LUSC: 0.9768
+ Testing bag [209/210] bag loss: 0.0022ROC AUC score: 0.9769279680261604
+ROC AUC score: 0.9769279680261603
+ Epoch [52/100] train loss: 0.2469 test loss: 0.2131, average score: 0.8952, auc_LUAD: 0.9769, auc_LUSC: 0.9769
+ Testing bag [209/210] bag loss: 0.0118ROC AUC score: 0.97683713325461
+ROC AUC score: 0.9768371332546097
+ Epoch [53/100] train loss: 0.2498 test loss: 0.2102, average score: 0.9143, auc_LUAD: 0.9768, auc_LUSC: 0.9768
+ Testing bag [209/210] bag loss: 0.0022ROC AUC score: 0.977018802797711
+ROC AUC score: 0.9770188027977109
+ Epoch [54/100] train loss: 0.2467 test loss: 0.2112, average score: 0.9095, auc_LUAD: 0.9770, auc_LUSC: 0.9770
+ Testing bag [209/210] bag loss: 0.0098ROC AUC score: 0.97683713325461
+ROC AUC score: 0.9768371332546097
+ Epoch [55/100] train loss: 0.2486 test loss: 0.2018, average score: 0.9143, auc_LUAD: 0.9768, auc_LUSC: 0.9768
+ Testing bag [209/210] bag loss: 0.0032ROC AUC score: 0.9771096375692615
+ROC AUC score: 0.9771096375692614
+ Epoch [56/100] train loss: 0.2492 test loss: 0.1944, average score: 0.9333, auc_LUAD: 0.9771, auc_LUSC: 0.9771
+ Testing bag [209/210] bag loss: 0.0033ROC AUC score: 0.9771096375692615
+ROC AUC score: 0.9771096375692614
+ Epoch [57/100] train loss: 0.2383 test loss: 0.1929, average score: 0.9333, auc_LUAD: 0.9771, auc_LUSC: 0.9771
+ Testing bag [209/210] bag loss: 0.0029ROC AUC score: 0.9771096375692615
+ROC AUC score: 0.9771096375692614
+ Epoch [58/100] train loss: 0.2469 test loss: 0.1971, average score: 0.9238, auc_LUAD: 0.9771, auc_LUSC: 0.9771
+ Testing bag [209/210] bag loss: 0.0029ROC AUC score: 0.9770188027977109
+ROC AUC score: 0.9770188027977109
+ Epoch [59/100] train loss: 0.2426 test loss: 0.1967, average score: 0.9238, auc_LUAD: 0.9770, auc_LUSC: 0.9770
+ Testing bag [209/210] bag loss: 0.0037ROC AUC score: 0.9770188027977109
+ROC AUC score: 0.9770188027977109
+ Epoch [60/100] train loss: 0.2420 test loss: 0.1894, average score: 0.9381, auc_LUAD: 0.9770, auc_LUSC: 0.9770
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5640, LUSC 0.4468
+ Testing bag [209/210] bag loss: 0.0051ROC AUC score: 0.9772004723408121
+ROC AUC score: 0.9772004723408121
+ Epoch [61/100] train loss: 0.2454 test loss: 0.1868, average score: 0.9381, auc_LUAD: 0.9772, auc_LUSC: 0.9772
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.4811, LUSC 0.5307
+ Testing bag [209/210] bag loss: 0.0034ROC AUC score: 0.9771096375692615
+ROC AUC score: 0.9771096375692615
+ Epoch [62/100] train loss: 0.2489 test loss: 0.1909, average score: 0.9333, auc_LUAD: 0.9771, auc_LUSC: 0.9771
+ Testing bag [209/210] bag loss: 0.0085ROC AUC score: 0.9772913071123626
+ROC AUC score: 0.9772913071123626
+ Epoch [63/100] train loss: 0.2437 test loss: 0.1964, average score: 0.9238, auc_LUAD: 0.9773, auc_LUSC: 0.9773
+ Testing bag [209/210] bag loss: 0.0058ROC AUC score: 0.9771096375692615
+ROC AUC score: 0.9771096375692615
+ Epoch [64/100] train loss: 0.2455 test loss: 0.1872, average score: 0.9381, auc_LUAD: 0.9771, auc_LUSC: 0.9771
+ Testing bag [209/210] bag loss: 0.0047ROC AUC score: 0.9772004723408121
+ROC AUC score: 0.9772004723408121
+ Epoch [65/100] train loss: 0.2444 test loss: 0.1863, average score: 0.9429, auc_LUAD: 0.9772, auc_LUSC: 0.9772
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5044, LUSC 0.5140
+ Testing bag [209/210] bag loss: 0.0065ROC AUC score: 0.9773821418839131
+ROC AUC score: 0.977382141883913
+ Epoch [66/100] train loss: 0.2460 test loss: 0.1890, average score: 0.9381, auc_LUAD: 0.9774, auc_LUSC: 0.9774
+ Testing bag [209/210] bag loss: 0.0080ROC AUC score: 0.9773821418839131
+ROC AUC score: 0.977382141883913
+ Epoch [67/100] train loss: 0.2434 test loss: 0.1946, average score: 0.9286, auc_LUAD: 0.9774, auc_LUSC: 0.9774
+ Testing bag [209/210] bag loss: 0.0023ROC AUC score: 0.9772913071123626
+ROC AUC score: 0.9772913071123626
+ Epoch [68/100] train loss: 0.2404 test loss: 0.2039, average score: 0.9190, auc_LUAD: 0.9773, auc_LUSC: 0.9773
+ Testing bag [209/210] bag loss: 0.0058ROC AUC score: 0.9773821418839131
+ROC AUC score: 0.977382141883913
+ Epoch [69/100] train loss: 0.2484 test loss: 0.1870, average score: 0.9429, auc_LUAD: 0.9774, auc_LUSC: 0.9774
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.4472, LUSC 0.5770
+ Testing bag [209/210] bag loss: 0.0046ROC AUC score: 0.9774729766554637
+ROC AUC score: 0.9774729766554636
+ Epoch [70/100] train loss: 0.2503 test loss: 0.1856, average score: 0.9429, auc_LUAD: 0.9775, auc_LUSC: 0.9775
+Best model saved at: weights\20241126\fold_0_12.pth Best thresholds: LUAD 0.5072, LUSC 0.5196
+ Testing bag [209/210] bag loss: 0.0044ROC AUC score: 0.9773821418839131
+ROC AUC score: 0.977382141883913
+ Epoch [71/100] train loss: 0.2379 test loss: 0.1856, average score: 0.9429, auc_LUAD: 0.9774, auc_LUSC: 0.9774
+ Testing bag [209/210] bag loss: 0.0026ROC AUC score: 0.9776546461985648
+ROC AUC score: 0.9776546461985647
+ Epoch [72/100] train loss: 0.2456 test loss: 0.1975, average score: 0.9238, auc_LUAD: 0.9777, auc_LUSC: 0.9777
+ Testing bag [209/210] bag loss: 0.0070ROC AUC score: 0.9776546461985648
+ROC AUC score: 0.9776546461985647
+ Epoch [73/100] train loss: 0.2513 test loss: 0.1901, average score: 0.9333, auc_LUAD: 0.9777, auc_LUSC: 0.9777
+ Testing bag [209/210] bag loss: 0.0090ROC AUC score: 0.9777454809701154
+ROC AUC score: 0.9777454809701154
+ Epoch [74/100] train loss: 0.2443 test loss: 0.1989, average score: 0.9190, auc_LUAD: 0.9777, auc_LUSC: 0.9777
+ Testing bag [209/210] bag loss: 0.0079ROC AUC score: 0.9777454809701154
+ROC AUC score: 0.9777454809701154
+ Epoch [75/100] train loss: 0.2395 test loss: 0.1944, average score: 0.9286, auc_LUAD: 0.9777, auc_LUSC: 0.9777
+ Testing bag [209/210] bag loss: 0.0040ROC AUC score: 0.9779271505132164
+ROC AUC score: 0.9779271505132163
+ Epoch [76/100] train loss: 0.2448 test loss: 0.1854, average score: 0.9381, auc_LUAD: 0.9779, auc_LUSC: 0.9779
+ Testing bag [209/210] bag loss: 0.0175ROC AUC score: 0.9779271505132164
+ROC AUC score: 0.9779271505132163
+ Epoch [77/100] train loss: 0.2405 test loss: 0.2424, average score: 0.8952, auc_LUAD: 0.9779, auc_LUSC: 0.9779
+ Testing bag [209/210] bag loss: 0.0097ROC AUC score: 0.9779271505132164
+ROC AUC score: 0.9779271505132163
+ Epoch [78/100] train loss: 0.2397 test loss: 0.2023, average score: 0.9143, auc_LUAD: 0.9779, auc_LUSC: 0.9779
+ Testing bag [209/210] bag loss: 0.0062ROC AUC score: 0.9779271505132164
+ROC AUC score: 0.9779271505132163
+ Epoch [79/100] train loss: 0.2380 test loss: 0.1876, average score: 0.9381, auc_LUAD: 0.9779, auc_LUSC: 0.9779
+ Testing bag [209/210] bag loss: 0.0027ROC AUC score: 0.9778363157416659
+ROC AUC score: 0.9778363157416659
+ Epoch [80/100] train loss: 0.2435 test loss: 0.1936, average score: 0.9286, auc_LUAD: 0.9778, auc_LUSC: 0.9778
+ Testing bag [209/210] bag loss: 0.0024ROC AUC score: 0.9778363157416659
+ROC AUC score: 0.9778363157416659
+ Epoch [81/100] train loss: 0.2426 test loss: 0.1974, average score: 0.9238, auc_LUAD: 0.9778, auc_LUSC: 0.9778
+ Testing bag [209/210] bag loss: 0.0022ROC AUC score: 0.9778363157416659
+ROC AUC score: 0.9778363157416659
+ Epoch [82/100] train loss: 0.2462 test loss: 0.1998, average score: 0.9143, auc_LUAD: 0.9778, auc_LUSC: 0.9778
+ Testing bag [209/210] bag loss: 0.0016ROC AUC score: 0.9778363157416659
+ROC AUC score: 0.9778363157416659
+ Epoch [83/100] train loss: 0.2450 test loss: 0.2208, average score: 0.8952, auc_LUAD: 0.9778, auc_LUSC: 0.9778
+ Testing bag [209/210] bag loss: 0.0093ROC AUC score: 0.9778363157416659
+ROC AUC score: 0.9778363157416659
+ Epoch [84/100] train loss: 0.2404 test loss: 0.2012, average score: 0.9190, auc_LUAD: 0.9778, auc_LUSC: 0.9778
+ Testing bag [209/210] bag loss: 0.0035ROC AUC score: 0.9779271505132164
+ROC AUC score: 0.9779271505132163
+ Epoch [85/100] train loss: 0.2401 test loss: 0.1856, average score: 0.9381, auc_LUAD: 0.9779, auc_LUSC: 0.9779
+ Testing bag [209/210] bag loss: 0.0063ROC AUC score: 0.978017985284767
+ROC AUC score: 0.978017985284767
+ Epoch [86/100] train loss: 0.2391 test loss: 0.1879, average score: 0.9381, auc_LUAD: 0.9780, auc_LUSC: 0.9780
+ Testing bag [209/210] bag loss: 0.0033ROC AUC score: 0.9779271505132163
+ROC AUC score: 0.9779271505132163
+ Epoch [87/100] train loss: 0.2400 test loss: 0.1860, average score: 0.9333, auc_LUAD: 0.9779, auc_LUSC: 0.9779
+ Testing bag [209/210] bag loss: 0.0091ROC AUC score: 0.9781996548278681
+ROC AUC score: 0.9781996548278681
+ Epoch [88/100] train loss: 0.2448 test loss: 0.2013, average score: 0.9190, auc_LUAD: 0.9782, auc_LUSC: 0.9782
+ Testing bag [209/210] bag loss: 0.0106ROC AUC score: 0.9783813243709691
+ROC AUC score: 0.9783813243709691
+ Epoch [89/100] train loss: 0.2434 test loss: 0.2093, average score: 0.9143, auc_LUAD: 0.9784, auc_LUSC: 0.9784
+ Testing bag [209/210] bag loss: 0.0031ROC AUC score: 0.9781088200563175
+ROC AUC score: 0.9781088200563175
+ Epoch [90/100] train loss: 0.2391 test loss: 0.1865, average score: 0.9333, auc_LUAD: 0.9781, auc_LUSC: 0.9781
+ Testing bag [209/210] bag loss: 0.0036ROC AUC score: 0.9782904895994187
+ROC AUC score: 0.9782904895994187
+ Epoch [91/100] train loss: 0.2348 test loss: 0.1840, average score: 0.9381, auc_LUAD: 0.9783, auc_LUSC: 0.9783
+ Testing bag [209/210] bag loss: 0.0029ROC AUC score: 0.9783813243709691
+ROC AUC score: 0.9783813243709691
+ Epoch [92/100] train loss: 0.2401 test loss: 0.1880, average score: 0.9333, auc_LUAD: 0.9784, auc_LUSC: 0.9784
+ Testing bag [209/210] bag loss: 0.0026ROC AUC score: 0.9783813243709691
+ROC AUC score: 0.9783813243709691
+ Epoch [93/100] train loss: 0.2377 test loss: 0.1911, average score: 0.9286, auc_LUAD: 0.9784, auc_LUSC: 0.9784
+ Testing bag [209/210] bag loss: 0.0023ROC AUC score: 0.9783813243709691
+ROC AUC score: 0.9783813243709691
+ Epoch [94/100] train loss: 0.2355 test loss: 0.1932, average score: 0.9286, auc_LUAD: 0.9784, auc_LUSC: 0.9784
+ Testing bag [209/210] bag loss: 0.0092ROC AUC score: 0.9783813243709691
+ROC AUC score: 0.9783813243709691
+ Epoch [95/100] train loss: 0.2391 test loss: 0.2030, average score: 0.9143, auc_LUAD: 0.9784, auc_LUSC: 0.9784
+ Testing bag [209/210] bag loss: 0.0018ROC AUC score: 0.9783813243709691
+ROC AUC score: 0.9783813243709691
+ Epoch [96/100] train loss: 0.2413 test loss: 0.2046, average score: 0.9095, auc_LUAD: 0.9784, auc_LUSC: 0.9784
+ Testing bag [209/210] bag loss: 0.0080ROC AUC score: 0.9783813243709691
+ROC AUC score: 0.9783813243709691
+ Epoch [97/100] train loss: 0.2399 test loss: 0.1961, average score: 0.9238, auc_LUAD: 0.9784, auc_LUSC: 0.9784
+ Testing bag [209/210] bag loss: 0.0061ROC AUC score: 0.9783813243709691
+ROC AUC score: 0.9783813243709691
+ Epoch [98/100] train loss: 0.2402 test loss: 0.1868, average score: 0.9381, auc_LUAD: 0.9784, auc_LUSC: 0.9784
+ Testing bag [209/210] bag loss: 0.0005ROC AUC score: 0.9783813243709691
+ROC AUC score: 0.9783813243709691
+ Epoch [99/100] train loss: 0.2295 test loss: 0.3245, average score: 0.8476, auc_LUAD: 0.9784, auc_LUSC: 0.9784
+ Testing bag [209/210] bag loss: 0.0049ROC AUC score: 0.9784721591425197
+ROC AUC score: 0.9784721591425197
+ Epoch [100/100] train loss: 0.2383 test loss: 0.1832, average score: 0.9381, auc_LUAD: 0.9785, auc_LUSC: 0.9785
+Starting CV fold 1.
+ Testing bag [208/209] bag loss: 0.0087ROC AUC score: 0.9570434145447885
+ROC AUC score: 0.9570434145447884
+ Epoch [1/100] train loss: 0.2841 test loss: 0.2664, average score: 0.8995, auc_LUAD: 0.9570, auc_LUSC: 0.9570
+Best model saved at: weights\20241126\fold_1_12.pth Best thresholds: LUAD 0.5955, LUSC 0.4058
+ Testing bag [208/209] bag loss: 0.0078ROC AUC score: 0.9594248030774867
+ROC AUC score: 0.9594248030774867
+ Epoch [2/100] train loss: 0.2452 test loss: 0.2485, average score: 0.9043, auc_LUAD: 0.9594, auc_LUSC: 0.9594
+Best model saved at: weights\20241126\fold_1_12.pth Best thresholds: LUAD 0.5125, LUSC 0.4906
+ Testing bag [208/209] bag loss: 0.0049ROC AUC score: 0.9601575380106246
+ROC AUC score: 0.9601575380106246
+ Epoch [3/100] train loss: 0.2361 test loss: 0.2447, average score: 0.8947, auc_LUAD: 0.9602, auc_LUSC: 0.9602
+ Testing bag [208/209] bag loss: 0.0059ROC AUC score: 0.9607070892104782
+ROC AUC score: 0.9607070892104781
+ Epoch [4/100] train loss: 0.2264 test loss: 0.2478, average score: 0.8995, auc_LUAD: 0.9607, auc_LUSC: 0.9607
+ Testing bag [208/209] bag loss: 0.0042ROC AUC score: 0.9616230078769006
+ROC AUC score: 0.9616230078769005
+ Epoch [5/100] train loss: 0.2242 test loss: 0.2437, average score: 0.9091, auc_LUAD: 0.9616, auc_LUSC: 0.9616
+Best model saved at: weights\20241126\fold_1_12.pth Best thresholds: LUAD 0.5000, LUSC 0.5055
+ Testing bag [208/209] bag loss: 0.0025ROC AUC score: 0.962172559076754
+ROC AUC score: 0.9621725590767539
+ Epoch [6/100] train loss: 0.2206 test loss: 0.2419, average score: 0.8995, auc_LUAD: 0.9622, auc_LUSC: 0.9622
+ Testing bag [208/209] bag loss: 0.0008ROC AUC score: 0.9630884777431764
+ROC AUC score: 0.9630884777431763
+ Epoch [7/100] train loss: 0.2209 test loss: 0.2800, average score: 0.8756, auc_LUAD: 0.9631, auc_LUSC: 0.9631
+ Testing bag [208/209] bag loss: 0.0007ROC AUC score: 0.9631800696098187
+ROC AUC score: 0.9631800696098187
+ Epoch [8/100] train loss: 0.2167 test loss: 0.2799, average score: 0.8756, auc_LUAD: 0.9632, auc_LUSC: 0.9632
+ Testing bag [208/209] bag loss: 0.0012ROC AUC score: 0.9632716614764609
+ROC AUC score: 0.9632716614764609
+ Epoch [9/100] train loss: 0.2198 test loss: 0.2482, average score: 0.8995, auc_LUAD: 0.9633, auc_LUSC: 0.9633
+ Testing bag [208/209] bag loss: 0.0008ROC AUC score: 0.9638212126763144
+ROC AUC score: 0.9638212126763143
+ Epoch [10/100] train loss: 0.2173 test loss: 0.2609, average score: 0.8947, auc_LUAD: 0.9638, auc_LUSC: 0.9638
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.9640043964095988
+ROC AUC score: 0.9640043964095988
+ Epoch [11/100] train loss: 0.2175 test loss: 0.3133, average score: 0.8756, auc_LUAD: 0.9640, auc_LUSC: 0.9640
+ Testing bag [208/209] bag loss: 0.0016ROC AUC score: 0.9637296208096721
+ROC AUC score: 0.9637296208096721
+ Epoch [12/100] train loss: 0.2188 test loss: 0.2437, average score: 0.8947, auc_LUAD: 0.9637, auc_LUSC: 0.9637
+ Testing bag [208/209] bag loss: 0.0013ROC AUC score: 0.9640043964095988
+ROC AUC score: 0.9640043964095988
+ Epoch [13/100] train loss: 0.2128 test loss: 0.2434, average score: 0.8947, auc_LUAD: 0.9640, auc_LUSC: 0.9640
+ Testing bag [208/209] bag loss: 0.0009ROC AUC score: 0.964095988276241
+ROC AUC score: 0.964095988276241
+ Epoch [14/100] train loss: 0.2208 test loss: 0.2482, average score: 0.8995, auc_LUAD: 0.9641, auc_LUSC: 0.9641
+ Testing bag [208/209] bag loss: 0.0009ROC AUC score: 0.9641875801428832
+ROC AUC score: 0.9641875801428833
+ Epoch [15/100] train loss: 0.2217 test loss: 0.2473, average score: 0.8947, auc_LUAD: 0.9642, auc_LUSC: 0.9642
+ Testing bag [208/209] bag loss: 0.0008ROC AUC score: 0.9641875801428832
+ROC AUC score: 0.9641875801428833
+ Epoch [16/100] train loss: 0.2145 test loss: 0.2485, average score: 0.8995, auc_LUAD: 0.9642, auc_LUSC: 0.9642
+ Testing bag [208/209] bag loss: 0.0005ROC AUC score: 0.9641875801428833
+ROC AUC score: 0.9641875801428832
+ Epoch [17/100] train loss: 0.2133 test loss: 0.2606, average score: 0.8947, auc_LUAD: 0.9642, auc_LUSC: 0.9642
+ Testing bag [208/209] bag loss: 0.0013ROC AUC score: 0.9642791720095255
+ROC AUC score: 0.9642791720095255
+ Epoch [18/100] train loss: 0.2120 test loss: 0.2464, average score: 0.8995, auc_LUAD: 0.9643, auc_LUSC: 0.9643
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.96446235574281
+ROC AUC score: 0.96446235574281
+ Epoch [19/100] train loss: 0.2149 test loss: 0.2771, average score: 0.8947, auc_LUAD: 0.9645, auc_LUSC: 0.9645
+ Testing bag [208/209] bag loss: 0.0013ROC AUC score: 0.9642791720095256
+ROC AUC score: 0.9642791720095255
+ Epoch [20/100] train loss: 0.2147 test loss: 0.2469, average score: 0.8995, auc_LUAD: 0.9643, auc_LUSC: 0.9643
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.9645539476094523
+ROC AUC score: 0.9645539476094522
+ Epoch [21/100] train loss: 0.2161 test loss: 0.2652, average score: 0.8947, auc_LUAD: 0.9646, auc_LUSC: 0.9646
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9646455394760945
+ROC AUC score: 0.9646455394760944
+ Epoch [22/100] train loss: 0.2167 test loss: 0.2909, average score: 0.8756, auc_LUAD: 0.9646, auc_LUSC: 0.9646
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9646455394760945
+ROC AUC score: 0.9646455394760944
+ Epoch [23/100] train loss: 0.2089 test loss: 0.2885, average score: 0.8756, auc_LUAD: 0.9646, auc_LUSC: 0.9646
+ Testing bag [208/209] bag loss: 0.0005ROC AUC score: 0.9645539476094523
+ROC AUC score: 0.9645539476094522
+ Epoch [24/100] train loss: 0.2167 test loss: 0.2557, average score: 0.9043, auc_LUAD: 0.9646, auc_LUSC: 0.9646
+Best model saved at: weights\20241126\fold_1_12.pth Best thresholds: LUAD 0.7315, LUSC 0.2796
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9647371313427368
+ROC AUC score: 0.9647371313427368
+ Epoch [25/100] train loss: 0.2124 test loss: 0.3133, average score: 0.8804, auc_LUAD: 0.9647, auc_LUSC: 0.9647
+ Testing bag [208/209] bag loss: 0.0005ROC AUC score: 0.9648287232093791
+ROC AUC score: 0.964828723209379
+ Epoch [26/100] train loss: 0.2149 test loss: 0.2547, average score: 0.9043, auc_LUAD: 0.9648, auc_LUSC: 0.9648
+Best model saved at: weights\20241126\fold_1_12.pth Best thresholds: LUAD 0.7247, LUSC 0.2869
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.9647371313427369
+ROC AUC score: 0.9647371313427368
+ Epoch [27/100] train loss: 0.2101 test loss: 0.2576, average score: 0.9043, auc_LUAD: 0.9647, auc_LUSC: 0.9647
+ Testing bag [208/209] bag loss: 0.0006ROC AUC score: 0.9647371313427369
+ROC AUC score: 0.9647371313427368
+ Epoch [28/100] train loss: 0.2231 test loss: 0.2505, average score: 0.8995, auc_LUAD: 0.9647, auc_LUSC: 0.9647
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.964828723209379
+ROC AUC score: 0.964828723209379
+ Epoch [29/100] train loss: 0.2142 test loss: 0.2720, average score: 0.8995, auc_LUAD: 0.9648, auc_LUSC: 0.9648
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9647371313427368
+ROC AUC score: 0.9647371313427368
+ Epoch [30/100] train loss: 0.2109 test loss: 0.3225, average score: 0.8708, auc_LUAD: 0.9647, auc_LUSC: 0.9647
+ Testing bag [208/209] bag loss: 0.0006ROC AUC score: 0.9647371313427369
+ROC AUC score: 0.9647371313427368
+ Epoch [31/100] train loss: 0.2107 test loss: 0.2486, average score: 0.8995, auc_LUAD: 0.9647, auc_LUSC: 0.9647
+ Testing bag [208/209] bag loss: 0.0007ROC AUC score: 0.9647371313427369
+ROC AUC score: 0.9647371313427368
+ Epoch [32/100] train loss: 0.2104 test loss: 0.2469, average score: 0.8995, auc_LUAD: 0.9647, auc_LUSC: 0.9647
+ Testing bag [208/209] bag loss: 0.0001ROC AUC score: 0.9650119069426635
+ROC AUC score: 0.9650119069426635
+ Epoch [33/100] train loss: 0.2143 test loss: 0.3254, average score: 0.8708, auc_LUAD: 0.9650, auc_LUSC: 0.9650
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.9649203150760213
+ROC AUC score: 0.9649203150760213
+ Epoch [34/100] train loss: 0.2126 test loss: 0.2617, average score: 0.8947, auc_LUAD: 0.9649, auc_LUSC: 0.9649
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9649203150760213
+ROC AUC score: 0.9649203150760213
+ Epoch [35/100] train loss: 0.2118 test loss: 0.2918, average score: 0.8756, auc_LUAD: 0.9649, auc_LUSC: 0.9649
+ Testing bag [208/209] bag loss: 0.0007ROC AUC score: 0.964828723209379
+ROC AUC score: 0.964828723209379
+ Epoch [36/100] train loss: 0.2151 test loss: 0.2471, average score: 0.8995, auc_LUAD: 0.9648, auc_LUSC: 0.9648
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9649203150760213
+ROC AUC score: 0.9649203150760213
+ Epoch [37/100] train loss: 0.2137 test loss: 0.2650, average score: 0.8947, auc_LUAD: 0.9649, auc_LUSC: 0.9649
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9649203150760213
+ROC AUC score: 0.9649203150760213
+ Epoch [38/100] train loss: 0.2134 test loss: 0.2849, average score: 0.8852, auc_LUAD: 0.9649, auc_LUSC: 0.9649
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9650119069426635
+ROC AUC score: 0.9650119069426635
+ Epoch [39/100] train loss: 0.2186 test loss: 0.3001, average score: 0.8756, auc_LUAD: 0.9650, auc_LUSC: 0.9650
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9650119069426635
+ROC AUC score: 0.9650119069426635
+ Epoch [40/100] train loss: 0.2120 test loss: 0.2689, average score: 0.8947, auc_LUAD: 0.9650, auc_LUSC: 0.9650
+ Testing bag [208/209] bag loss: 0.0007ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [41/100] train loss: 0.2138 test loss: 0.2474, average score: 0.8947, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.9651034988093057
+ROC AUC score: 0.9651034988093057
+ Epoch [42/100] train loss: 0.2093 test loss: 0.2579, average score: 0.9043, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+Best model saved at: weights\20241126\fold_1_12.pth Best thresholds: LUAD 0.7404, LUSC 0.2709
+ Testing bag [208/209] bag loss: 0.0005ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [43/100] train loss: 0.2138 test loss: 0.2502, average score: 0.8995, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0012ROC AUC score: 0.9650119069426635
+ROC AUC score: 0.9650119069426635
+ Epoch [44/100] train loss: 0.2083 test loss: 0.2564, average score: 0.8995, auc_LUAD: 0.9650, auc_LUSC: 0.9650
+ Testing bag [208/209] bag loss: 0.0005ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [45/100] train loss: 0.2145 test loss: 0.2500, average score: 0.8995, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [46/100] train loss: 0.2152 test loss: 0.2537, average score: 0.9043, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0001ROC AUC score: 0.9651950906759481
+ROC AUC score: 0.9651950906759479
+ Epoch [47/100] train loss: 0.2132 test loss: 0.3182, average score: 0.8804, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [48/100] train loss: 0.2139 test loss: 0.2676, average score: 0.8947, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [49/100] train loss: 0.2125 test loss: 0.2760, average score: 0.8995, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0009ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [50/100] train loss: 0.2094 test loss: 0.2497, average score: 0.8995, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0013ROC AUC score: 0.9650119069426635
+ROC AUC score: 0.9650119069426635
+ Epoch [51/100] train loss: 0.2131 test loss: 0.2624, average score: 0.8947, auc_LUAD: 0.9650, auc_LUSC: 0.9650
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [52/100] train loss: 0.2175 test loss: 0.2592, average score: 0.9043, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [53/100] train loss: 0.2168 test loss: 0.2623, average score: 0.8947, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [54/100] train loss: 0.2146 test loss: 0.2591, average score: 0.9043, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0006ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [55/100] train loss: 0.2100 test loss: 0.2475, average score: 0.8947, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9651950906759481
+ROC AUC score: 0.9651950906759479
+ Epoch [56/100] train loss: 0.2100 test loss: 0.2955, average score: 0.8756, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9651034988093058
+ROC AUC score: 0.9651034988093057
+ Epoch [57/100] train loss: 0.2128 test loss: 0.2671, average score: 0.8947, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0005ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [58/100] train loss: 0.2098 test loss: 0.2482, average score: 0.8995, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [59/100] train loss: 0.2115 test loss: 0.2642, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [60/100] train loss: 0.2148 test loss: 0.2693, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0005ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [61/100] train loss: 0.2162 test loss: 0.2493, average score: 0.9043, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+Best model saved at: weights\20241126\fold_1_12.pth Best thresholds: LUAD 0.6637, LUSC 0.3444
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [62/100] train loss: 0.2117 test loss: 0.2510, average score: 0.8995, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0005ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [63/100] train loss: 0.2036 test loss: 0.2487, average score: 0.8995, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [64/100] train loss: 0.2162 test loss: 0.2509, average score: 0.8995, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0008ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [65/100] train loss: 0.2122 test loss: 0.2493, average score: 0.8995, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [66/100] train loss: 0.2150 test loss: 0.2679, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0006ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [67/100] train loss: 0.2089 test loss: 0.2471, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [68/100] train loss: 0.2122 test loss: 0.2523, average score: 0.8995, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [69/100] train loss: 0.2104 test loss: 0.2706, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0007ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [70/100] train loss: 0.2109 test loss: 0.2470, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0008ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [71/100] train loss: 0.2101 test loss: 0.2495, average score: 0.8995, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [72/100] train loss: 0.2091 test loss: 0.2719, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0001ROC AUC score: 0.9652866825425903
+ROC AUC score: 0.9652866825425902
+ Epoch [73/100] train loss: 0.2095 test loss: 0.3408, average score: 0.8756, auc_LUAD: 0.9653, auc_LUSC: 0.9653
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [74/100] train loss: 0.2119 test loss: 0.2771, average score: 0.8995, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [75/100] train loss: 0.2096 test loss: 0.2794, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [76/100] train loss: 0.2120 test loss: 0.2752, average score: 0.8995, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0001ROC AUC score: 0.9653782744092325
+ROC AUC score: 0.9653782744092324
+ Epoch [77/100] train loss: 0.2112 test loss: 0.3464, average score: 0.8660, auc_LUAD: 0.9654, auc_LUSC: 0.9654
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [78/100] train loss: 0.2090 test loss: 0.2678, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0001ROC AUC score: 0.9653782744092325
+ROC AUC score: 0.9653782744092324
+ Epoch [79/100] train loss: 0.2092 test loss: 0.3810, average score: 0.8373, auc_LUAD: 0.9654, auc_LUSC: 0.9654
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [80/100] train loss: 0.2158 test loss: 0.2781, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9653782744092325
+ROC AUC score: 0.9653782744092324
+ Epoch [81/100] train loss: 0.2084 test loss: 0.2832, average score: 0.8852, auc_LUAD: 0.9654, auc_LUSC: 0.9654
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9651034988093057
+ROC AUC score: 0.9651034988093057
+ Epoch [82/100] train loss: 0.2110 test loss: 0.2632, average score: 0.8947, auc_LUAD: 0.9651, auc_LUSC: 0.9651
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [83/100] train loss: 0.2118 test loss: 0.2699, average score: 0.8947, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.965195090675948
+ROC AUC score: 0.9651950906759479
+ Epoch [84/100] train loss: 0.2078 test loss: 0.2492, average score: 0.9043, auc_LUAD: 0.9652, auc_LUSC: 0.9652
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9653782744092324
+ROC AUC score: 0.9653782744092324
+ Epoch [85/100] train loss: 0.2098 test loss: 0.2733, average score: 0.8947, auc_LUAD: 0.9654, auc_LUSC: 0.9654
+ Testing bag [208/209] bag loss: 0.0006ROC AUC score: 0.9652866825425902
+ROC AUC score: 0.9652866825425902
+ Epoch [86/100] train loss: 0.2115 test loss: 0.2465, average score: 0.8947, auc_LUAD: 0.9653, auc_LUSC: 0.9653
+ Testing bag [208/209] bag loss: 0.0006ROC AUC score: 0.9652866825425902
+ROC AUC score: 0.9652866825425902
+ Epoch [87/100] train loss: 0.2148 test loss: 0.2464, average score: 0.8995, auc_LUAD: 0.9653, auc_LUSC: 0.9653
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9653782744092324
+ROC AUC score: 0.9653782744092324
+ Epoch [88/100] train loss: 0.2026 test loss: 0.2585, average score: 0.8995, auc_LUAD: 0.9654, auc_LUSC: 0.9654
+ Testing bag [208/209] bag loss: 0.0006ROC AUC score: 0.9653782744092324
+ROC AUC score: 0.9653782744092324
+ Epoch [89/100] train loss: 0.2114 test loss: 0.2464, average score: 0.8995, auc_LUAD: 0.9654, auc_LUSC: 0.9654
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9653782744092324
+ROC AUC score: 0.9653782744092324
+ Epoch [90/100] train loss: 0.2136 test loss: 0.2557, average score: 0.9043, auc_LUAD: 0.9654, auc_LUSC: 0.9654
+Best model saved at: weights\20241126\fold_1_12.pth Best thresholds: LUAD 0.8380, LUSC 0.1742
+ Testing bag [208/209] bag loss: 0.0006ROC AUC score: 0.9654698662758747
+ROC AUC score: 0.9654698662758747
+ Epoch [91/100] train loss: 0.2101 test loss: 0.2463, average score: 0.8947, auc_LUAD: 0.9655, auc_LUSC: 0.9655
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9653782744092324
+ROC AUC score: 0.9653782744092324
+ Epoch [92/100] train loss: 0.2142 test loss: 0.2641, average score: 0.8947, auc_LUAD: 0.9654, auc_LUSC: 0.9654
+ Testing bag [208/209] bag loss: 0.0001ROC AUC score: 0.9658362337424437
+ROC AUC score: 0.9658362337424437
+ Epoch [93/100] train loss: 0.2056 test loss: 0.3666, average score: 0.8517, auc_LUAD: 0.9658, auc_LUSC: 0.9658
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9655614581425169
+ROC AUC score: 0.9655614581425169
+ Epoch [94/100] train loss: 0.2068 test loss: 0.2774, average score: 0.8947, auc_LUAD: 0.9656, auc_LUSC: 0.9656
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9654698662758747
+ROC AUC score: 0.9654698662758747
+ Epoch [95/100] train loss: 0.2103 test loss: 0.2584, average score: 0.8995, auc_LUAD: 0.9655, auc_LUSC: 0.9655
+ Testing bag [208/209] bag loss: 0.0013ROC AUC score: 0.9653782744092325
+ROC AUC score: 0.9653782744092325
+ Epoch [96/100] train loss: 0.2080 test loss: 0.2650, average score: 0.8947, auc_LUAD: 0.9654, auc_LUSC: 0.9654
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9655614581425169
+ROC AUC score: 0.9655614581425169
+ Epoch [97/100] train loss: 0.2133 test loss: 0.2654, average score: 0.8947, auc_LUAD: 0.9656, auc_LUSC: 0.9656
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.9655614581425169
+ROC AUC score: 0.9655614581425169
+ Epoch [98/100] train loss: 0.2142 test loss: 0.2490, average score: 0.9043, auc_LUAD: 0.9656, auc_LUSC: 0.9656
+Best model saved at: weights\20241126\fold_1_12.pth Best thresholds: LUAD 0.7987, LUSC 0.2159
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9655614581425169
+ROC AUC score: 0.9655614581425169
+ Epoch [99/100] train loss: 0.2103 test loss: 0.2554, average score: 0.9043, auc_LUAD: 0.9656, auc_LUSC: 0.9656
+ Testing bag [208/209] bag loss: 0.0004ROC AUC score: 0.9655614581425169
+ROC AUC score: 0.9655614581425169
+ Epoch [100/100] train loss: 0.2126 test loss: 0.2480, average score: 0.9043, auc_LUAD: 0.9656, auc_LUSC: 0.9656
+Starting CV fold 2.
+ Testing bag [208/209] bag loss: 0.5288ROC AUC score: 0.9083333333333334
+ROC AUC score: 0.9083333333333333
+ Epoch [1/100] train loss: 2.4960 test loss: 0.5294, average score: 0.8182, auc_LUAD: 0.9083, auc_LUSC: 0.9083
+Best model saved at: weights\20241126\fold_2_12.pth Best thresholds: LUAD 0.5330, LUSC 0.4745
+ Testing bag [208/209] bag loss: 0.1930ROC AUC score: 0.9726190476190477
+ROC AUC score: 0.9726190476190477
+ Epoch [2/100] train loss: 0.4008 test loss: 0.3344, average score: 0.9139, auc_LUAD: 0.9726, auc_LUSC: 0.9726
+Best model saved at: weights\20241126\fold_2_12.pth Best thresholds: LUAD 0.5327, LUSC 0.4682
+ Testing bag [208/209] bag loss: 0.1100ROC AUC score: 0.9720695970695971
+ROC AUC score: 0.9720695970695971
+ Epoch [3/100] train loss: 0.2954 test loss: 0.2841, average score: 0.9091, auc_LUAD: 0.9721, auc_LUSC: 0.9721
+ Testing bag [208/209] bag loss: 0.0786ROC AUC score: 0.9717032967032967
+ROC AUC score: 0.9717032967032967
+ Epoch [4/100] train loss: 0.2605 test loss: 0.2628, average score: 0.8995, auc_LUAD: 0.9717, auc_LUSC: 0.9717
+ Testing bag [208/209] bag loss: 0.0678ROC AUC score: 0.9710622710622712
+ROC AUC score: 0.971062271062271
+ Epoch [5/100] train loss: 0.2460 test loss: 0.2557, average score: 0.8995, auc_LUAD: 0.9711, auc_LUSC: 0.9711
+ Testing bag [208/209] bag loss: 0.1397ROC AUC score: 0.9705128205128204
+ROC AUC score: 0.9705128205128205
+ Epoch [6/100] train loss: 0.2317 test loss: 0.3400, average score: 0.8182, auc_LUAD: 0.9705, auc_LUSC: 0.9705
+ Testing bag [208/209] bag loss: 0.0447ROC AUC score: 0.9704212454212454
+ROC AUC score: 0.9704212454212454
+ Epoch [7/100] train loss: 0.2298 test loss: 0.2434, average score: 0.8995, auc_LUAD: 0.9704, auc_LUSC: 0.9704
+ Testing bag [208/209] bag loss: 0.0239ROC AUC score: 0.9702380952380952
+ROC AUC score: 0.9702380952380952
+ Epoch [8/100] train loss: 0.2256 test loss: 0.2318, average score: 0.9234, auc_LUAD: 0.9702, auc_LUSC: 0.9702
+Best model saved at: weights\20241126\fold_2_12.pth Best thresholds: LUAD 0.5158, LUSC 0.4999
+ Testing bag [208/209] bag loss: 0.0254ROC AUC score: 0.9701465201465201
+ROC AUC score: 0.9701465201465201
+ Epoch [9/100] train loss: 0.2201 test loss: 0.2304, average score: 0.9043, auc_LUAD: 0.9701, auc_LUSC: 0.9701
+ Testing bag [208/209] bag loss: 0.0126ROC AUC score: 0.970054945054945
+ROC AUC score: 0.970054945054945
+ Epoch [10/100] train loss: 0.2266 test loss: 0.2351, average score: 0.9187, auc_LUAD: 0.9701, auc_LUSC: 0.9701
+ Testing bag [208/209] bag loss: 0.0124ROC AUC score: 0.96996336996337
+ROC AUC score: 0.96996336996337
+ Epoch [11/100] train loss: 0.2106 test loss: 0.2299, average score: 0.9234, auc_LUAD: 0.9700, auc_LUSC: 0.9700
+ Testing bag [208/209] bag loss: 0.0146ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [12/100] train loss: 0.2172 test loss: 0.2251, average score: 0.9187, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0440ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [13/100] train loss: 0.2124 test loss: 0.2783, average score: 0.8804, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0141ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [14/100] train loss: 0.2151 test loss: 0.2241, average score: 0.9091, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0083ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [15/100] train loss: 0.2119 test loss: 0.2291, average score: 0.9187, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0248ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [16/100] train loss: 0.2139 test loss: 0.2467, average score: 0.9043, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0097ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [17/100] train loss: 0.2155 test loss: 0.2233, average score: 0.9234, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0067ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [18/100] train loss: 0.2129 test loss: 0.2296, average score: 0.9187, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0246ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [19/100] train loss: 0.2145 test loss: 0.2542, average score: 0.9043, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0117ROC AUC score: 0.9695970695970696
+ROC AUC score: 0.9695970695970696
+ Epoch [20/100] train loss: 0.2126 test loss: 0.2241, average score: 0.9043, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 0.0093ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [21/100] train loss: 0.2049 test loss: 0.2223, average score: 0.9091, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0077ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [22/100] train loss: 0.2103 test loss: 0.2226, average score: 0.9234, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0046ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [23/100] train loss: 0.2086 test loss: 0.2351, average score: 0.9139, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0242ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [24/100] train loss: 0.2128 test loss: 0.2654, average score: 0.8900, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0141ROC AUC score: 0.9693223443223443
+ROC AUC score: 0.9693223443223443
+ Epoch [25/100] train loss: 0.2192 test loss: 0.2337, average score: 0.8995, auc_LUAD: 0.9693, auc_LUSC: 0.9693
+ Testing bag [208/209] bag loss: 0.0095ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [26/100] train loss: 0.2089 test loss: 0.2236, average score: 0.9043, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0220ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [27/100] train loss: 0.2087 test loss: 0.2626, average score: 0.8947, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0217ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [28/100] train loss: 0.2068 test loss: 0.2631, average score: 0.8947, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0102ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [29/100] train loss: 0.2170 test loss: 0.2262, average score: 0.8995, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0074ROC AUC score: 0.9693223443223443
+ROC AUC score: 0.9693223443223443
+ Epoch [30/100] train loss: 0.2090 test loss: 0.2220, average score: 0.9139, auc_LUAD: 0.9693, auc_LUSC: 0.9693
+ Testing bag [208/209] bag loss: 0.0062ROC AUC score: 0.9693223443223443
+ROC AUC score: 0.9693223443223443
+ Epoch [31/100] train loss: 0.2070 test loss: 0.2223, average score: 0.9234, auc_LUAD: 0.9693, auc_LUSC: 0.9693
+ Testing bag [208/209] bag loss: 0.0037ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [32/100] train loss: 0.2078 test loss: 0.2340, average score: 0.9139, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0111ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [33/100] train loss: 0.2183 test loss: 0.2306, average score: 0.8995, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0113ROC AUC score: 0.9693223443223443
+ROC AUC score: 0.9693223443223443
+ Epoch [34/100] train loss: 0.2076 test loss: 0.2320, average score: 0.8995, auc_LUAD: 0.9693, auc_LUSC: 0.9693
+ Testing bag [208/209] bag loss: 0.0083ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [35/100] train loss: 0.2109 test loss: 0.2239, average score: 0.9043, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0105ROC AUC score: 0.9692307692307692
+ROC AUC score: 0.9692307692307692
+ Epoch [36/100] train loss: 0.2113 test loss: 0.2298, average score: 0.8947, auc_LUAD: 0.9692, auc_LUSC: 0.9692
+ Testing bag [208/209] bag loss: 0.0072ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [37/100] train loss: 0.2142 test loss: 0.2222, average score: 0.9043, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0299ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [38/100] train loss: 0.2098 test loss: 0.3043, average score: 0.8852, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0076ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [39/100] train loss: 0.2115 test loss: 0.2231, average score: 0.9043, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0073ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [40/100] train loss: 0.2148 test loss: 0.2226, average score: 0.9043, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0053ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [41/100] train loss: 0.2102 test loss: 0.2225, average score: 0.9282, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+Best model saved at: weights\20241126\fold_2_12.pth Best thresholds: LUAD 0.5047, LUSC 0.5007
+ Testing bag [208/209] bag loss: 0.0157ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [42/100] train loss: 0.2131 test loss: 0.2517, average score: 0.9043, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0152ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [43/100] train loss: 0.2112 test loss: 0.2498, average score: 0.9043, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0093ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [44/100] train loss: 0.2128 test loss: 0.2277, average score: 0.8995, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0094ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [45/100] train loss: 0.2059 test loss: 0.2281, average score: 0.8995, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0139ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [46/100] train loss: 0.2130 test loss: 0.2449, average score: 0.8947, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0123ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [47/100] train loss: 0.2132 test loss: 0.2384, average score: 0.8947, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0067ROC AUC score: 0.9694139194139194
+ROC AUC score: 0.9694139194139194
+ Epoch [48/100] train loss: 0.2127 test loss: 0.2219, average score: 0.9091, auc_LUAD: 0.9694, auc_LUSC: 0.9694
+ Testing bag [208/209] bag loss: 0.0077ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [49/100] train loss: 0.2063 test loss: 0.2237, average score: 0.9043, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0043ROC AUC score: 0.9695970695970696
+ROC AUC score: 0.9695970695970696
+ Epoch [50/100] train loss: 0.2074 test loss: 0.2250, average score: 0.9234, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 0.0026ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [51/100] train loss: 0.2129 test loss: 0.2431, average score: 0.9091, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0096ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [52/100] train loss: 0.2156 test loss: 0.2289, average score: 0.8995, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0092ROC AUC score: 0.9695970695970696
+ROC AUC score: 0.9695970695970696
+ Epoch [53/100] train loss: 0.2089 test loss: 0.2277, average score: 0.8995, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 0.0069ROC AUC score: 0.9695970695970696
+ROC AUC score: 0.9695970695970696
+ Epoch [54/100] train loss: 0.2108 test loss: 0.2222, average score: 0.9043, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 0.0026ROC AUC score: 0.9695970695970696
+ROC AUC score: 0.9695970695970696
+ Epoch [55/100] train loss: 0.2057 test loss: 0.2435, average score: 0.9091, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 0.0048ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [56/100] train loss: 0.2067 test loss: 0.2225, average score: 0.9234, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0048ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [57/100] train loss: 0.2083 test loss: 0.2223, average score: 0.9234, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0140ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [58/100] train loss: 0.2095 test loss: 0.2474, average score: 0.9043, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0207ROC AUC score: 0.9695970695970696
+ROC AUC score: 0.9695970695970696
+ Epoch [59/100] train loss: 0.2077 test loss: 0.2770, average score: 0.8804, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 0.0088ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [60/100] train loss: 0.2121 test loss: 0.2275, average score: 0.8995, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0038ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [61/100] train loss: 0.2080 test loss: 0.2266, average score: 0.9234, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0036ROC AUC score: 0.9695054945054945
+ROC AUC score: 0.9695054945054945
+ Epoch [62/100] train loss: 0.2060 test loss: 0.2279, average score: 0.9234, auc_LUAD: 0.9695, auc_LUSC: 0.9695
+ Testing bag [208/209] bag loss: 0.0304ROC AUC score: 0.9695970695970696
+ROC AUC score: 0.9695970695970696
+ Epoch [63/100] train loss: 0.2093 test loss: 0.3147, average score: 0.8852, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 0.0026ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [64/100] train loss: 0.2115 test loss: 0.2406, average score: 0.9091, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0045ROC AUC score: 0.9695970695970696
+ROC AUC score: 0.9695970695970696
+ Epoch [65/100] train loss: 0.2070 test loss: 0.2230, average score: 0.9234, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 0.0124ROC AUC score: 0.9695970695970696
+ROC AUC score: 0.9695970695970696
+ Epoch [66/100] train loss: 0.2075 test loss: 0.2414, average score: 0.8947, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 0.0019ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [67/100] train loss: 0.2125 test loss: 0.2603, average score: 0.8947, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0087ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [68/100] train loss: 0.2068 test loss: 0.2271, average score: 0.8995, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0069ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [69/100] train loss: 0.2059 test loss: 0.2224, average score: 0.9043, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0095ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [70/100] train loss: 0.2082 test loss: 0.2295, average score: 0.9043, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0071ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [71/100] train loss: 0.2109 test loss: 0.2226, average score: 0.9043, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0085ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [72/100] train loss: 0.2061 test loss: 0.2260, average score: 0.9043, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0047ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [73/100] train loss: 0.2089 test loss: 0.2221, average score: 0.9234, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0110ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [74/100] train loss: 0.2116 test loss: 0.2344, average score: 0.8947, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0096ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [75/100] train loss: 0.2056 test loss: 0.2294, average score: 0.9043, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0064ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [76/100] train loss: 0.2110 test loss: 0.2212, average score: 0.9043, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0109ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [77/100] train loss: 0.2014 test loss: 0.2345, average score: 0.8947, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0036ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [78/100] train loss: 0.2086 test loss: 0.2275, average score: 0.9234, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0077ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [79/100] train loss: 0.2085 test loss: 0.2235, average score: 0.9043, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0059ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [80/100] train loss: 0.2068 test loss: 0.2206, average score: 0.9091, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0105ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [81/100] train loss: 0.2130 test loss: 0.2325, average score: 0.8995, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0058ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [82/100] train loss: 0.2120 test loss: 0.2205, average score: 0.9139, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0059ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [83/100] train loss: 0.2079 test loss: 0.2205, average score: 0.9091, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0162ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [84/100] train loss: 0.2090 test loss: 0.2556, average score: 0.9043, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0074ROC AUC score: 0.9696886446886447
+ROC AUC score: 0.9696886446886447
+ Epoch [85/100] train loss: 0.2073 test loss: 0.2226, average score: 0.9043, auc_LUAD: 0.9697, auc_LUSC: 0.9697
+ Testing bag [208/209] bag loss: 0.0047ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [86/100] train loss: 0.2140 test loss: 0.2217, average score: 0.9234, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0034ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [87/100] train loss: 0.2079 test loss: 0.2290, average score: 0.9139, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0117ROC AUC score: 0.9697802197802198
+ROC AUC score: 0.9697802197802198
+ Epoch [88/100] train loss: 0.2050 test loss: 0.2368, average score: 0.8947, auc_LUAD: 0.9698, auc_LUSC: 0.9698
+ Testing bag [208/209] bag loss: 0.0036ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [89/100] train loss: 0.2096 test loss: 0.2273, average score: 0.9234, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0047ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [90/100] train loss: 0.2074 test loss: 0.2217, average score: 0.9234, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0088ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [91/100] train loss: 0.2133 test loss: 0.2260, average score: 0.9043, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0093ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [92/100] train loss: 0.2127 test loss: 0.2282, average score: 0.9043, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0123ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [93/100] train loss: 0.2073 test loss: 0.2394, average score: 0.8947, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0040ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [94/100] train loss: 0.2033 test loss: 0.2245, average score: 0.9234, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0059ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [95/100] train loss: 0.2061 test loss: 0.2201, average score: 0.9091, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0077ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [96/100] train loss: 0.2048 test loss: 0.2228, average score: 0.9043, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0101ROC AUC score: 0.96996336996337
+ROC AUC score: 0.96996336996337
+ Epoch [97/100] train loss: 0.2015 test loss: 0.2309, average score: 0.9043, auc_LUAD: 0.9700, auc_LUSC: 0.9700
+ Testing bag [208/209] bag loss: 0.0097ROC AUC score: 0.96996336996337
+ROC AUC score: 0.96996336996337
+ Epoch [98/100] train loss: 0.2068 test loss: 0.2292, average score: 0.9043, auc_LUAD: 0.9700, auc_LUSC: 0.9700
+ Testing bag [208/209] bag loss: 0.0043ROC AUC score: 0.9698717948717949
+ROC AUC score: 0.9698717948717949
+ Epoch [99/100] train loss: 0.2080 test loss: 0.2227, average score: 0.9234, auc_LUAD: 0.9699, auc_LUSC: 0.9699
+ Testing bag [208/209] bag loss: 0.0127ROC AUC score: 0.970054945054945
+ROC AUC score: 0.970054945054945
+ Epoch [100/100] train loss: 0.2080 test loss: 0.2411, average score: 0.8947, auc_LUAD: 0.9701, auc_LUSC: 0.9701
+Starting CV fold 3.
+ Testing bag [208/209] bag loss: 0.3360ROC AUC score: 0.9732551749404652
+ROC AUC score: 0.9732551749404653
+ Epoch [1/100] train loss: 0.2926 test loss: 0.2489, average score: 0.9187, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5491, LUSC 0.4618
+ Testing bag [208/209] bag loss: 0.1511ROC AUC score: 0.9734383586737497
+ROC AUC score: 0.9734383586737498
+ Epoch [2/100] train loss: 0.2426 test loss: 0.2491, average score: 0.8804, auc_LUAD: 0.9734, auc_LUSC: 0.9734
+ Testing bag [208/209] bag loss: 0.2283ROC AUC score: 0.9734383586737497
+ROC AUC score: 0.9734383586737498
+ Epoch [3/100] train loss: 0.2366 test loss: 0.2308, average score: 0.9091, auc_LUAD: 0.9734, auc_LUSC: 0.9734
+ Testing bag [208/209] bag loss: 0.1543ROC AUC score: 0.9734383586737497
+ROC AUC score: 0.9734383586737498
+ Epoch [4/100] train loss: 0.2326 test loss: 0.2329, average score: 0.8900, auc_LUAD: 0.9734, auc_LUSC: 0.9734
+ Testing bag [208/209] bag loss: 0.2394ROC AUC score: 0.9734383586737497
+ROC AUC score: 0.9734383586737498
+ Epoch [5/100] train loss: 0.2270 test loss: 0.2263, average score: 0.9043, auc_LUAD: 0.9734, auc_LUSC: 0.9734
+ Testing bag [208/209] bag loss: 0.1435ROC AUC score: 0.9734383586737497
+ROC AUC score: 0.9734383586737498
+ Epoch [6/100] train loss: 0.2263 test loss: 0.2280, average score: 0.8995, auc_LUAD: 0.9734, auc_LUSC: 0.9734
+ Testing bag [208/209] bag loss: 0.1415ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [7/100] train loss: 0.2304 test loss: 0.2257, average score: 0.8995, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.2625ROC AUC score: 0.9732551749404653
+ROC AUC score: 0.9732551749404653
+ Epoch [8/100] train loss: 0.2241 test loss: 0.2269, average score: 0.9282, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.6857, LUSC 0.3350
+ Testing bag [208/209] bag loss: 0.1999ROC AUC score: 0.9732551749404653
+ROC AUC score: 0.9732551749404653
+ Epoch [9/100] train loss: 0.2252 test loss: 0.2198, average score: 0.8995, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.1375ROC AUC score: 0.9732551749404653
+ROC AUC score: 0.9732551749404653
+ Epoch [10/100] train loss: 0.2239 test loss: 0.2210, average score: 0.8995, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.2985ROC AUC score: 0.9732551749404653
+ROC AUC score: 0.9732551749404653
+ Epoch [11/100] train loss: 0.2226 test loss: 0.2334, average score: 0.9234, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.1542ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [12/100] train loss: 0.2267 test loss: 0.2174, average score: 0.9091, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.3855ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [13/100] train loss: 0.2237 test loss: 0.2533, average score: 0.9187, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.2352ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [14/100] train loss: 0.2279 test loss: 0.2227, average score: 0.9282, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5497, LUSC 0.4556
+ Testing bag [208/209] bag loss: 0.0815ROC AUC score: 0.9734383586737497
+ROC AUC score: 0.9734383586737498
+ Epoch [15/100] train loss: 0.2213 test loss: 0.2348, average score: 0.8852, auc_LUAD: 0.9734, auc_LUSC: 0.9734
+ Testing bag [208/209] bag loss: 0.1747ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [16/100] train loss: 0.2194 test loss: 0.2160, average score: 0.8995, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.1610ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [17/100] train loss: 0.2239 test loss: 0.2153, average score: 0.9091, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.1320ROC AUC score: 0.9734383586737498
+ROC AUC score: 0.9734383586737498
+ Epoch [18/100] train loss: 0.2297 test loss: 0.2159, average score: 0.8995, auc_LUAD: 0.9734, auc_LUSC: 0.9734
+ Testing bag [208/209] bag loss: 0.1097ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [19/100] train loss: 0.2198 test loss: 0.2190, average score: 0.8995, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.2872ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [20/100] train loss: 0.2198 test loss: 0.2333, average score: 0.9234, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.1084ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [21/100] train loss: 0.2207 test loss: 0.2186, average score: 0.8995, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.1543ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [22/100] train loss: 0.2145 test loss: 0.2142, average score: 0.9043, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.1598ROC AUC score: 0.9733467668071075
+ROC AUC score: 0.9733467668071075
+ Epoch [23/100] train loss: 0.2237 test loss: 0.2142, average score: 0.8995, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 0.1452ROC AUC score: 0.9735299505403922
+ROC AUC score: 0.973529950540392
+ Epoch [24/100] train loss: 0.2218 test loss: 0.2138, average score: 0.9043, auc_LUAD: 0.9735, auc_LUSC: 0.9735
+ Testing bag [208/209] bag loss: 0.2354ROC AUC score: 0.9734383586737497
+ROC AUC score: 0.9734383586737498
+ Epoch [25/100] train loss: 0.2188 test loss: 0.2236, average score: 0.9282, auc_LUAD: 0.9734, auc_LUSC: 0.9734
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5377, LUSC 0.4814
+ Testing bag [208/209] bag loss: 0.1491ROC AUC score: 0.9735299505403922
+ROC AUC score: 0.973529950540392
+ Epoch [26/100] train loss: 0.2267 test loss: 0.2135, average score: 0.9091, auc_LUAD: 0.9735, auc_LUSC: 0.9735
+ Testing bag [208/209] bag loss: 0.1560ROC AUC score: 0.9736215424070344
+ROC AUC score: 0.9736215424070342
+ Epoch [27/100] train loss: 0.2237 test loss: 0.2136, average score: 0.8995, auc_LUAD: 0.9736, auc_LUSC: 0.9736
+ Testing bag [208/209] bag loss: 0.0838ROC AUC score: 0.9737131342736765
+ROC AUC score: 0.9737131342736766
+ Epoch [28/100] train loss: 0.2185 test loss: 0.2243, average score: 0.8947, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.0877ROC AUC score: 0.9737131342736766
+ROC AUC score: 0.9737131342736766
+ Epoch [29/100] train loss: 0.2204 test loss: 0.2221, average score: 0.8947, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.0322ROC AUC score: 0.9737131342736765
+ROC AUC score: 0.9737131342736766
+ Epoch [30/100] train loss: 0.2261 test loss: 0.2945, average score: 0.8612, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.0840ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [31/100] train loss: 0.2272 test loss: 0.2232, average score: 0.8947, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.1673ROC AUC score: 0.9737131342736766
+ROC AUC score: 0.9737131342736766
+ Epoch [32/100] train loss: 0.2238 test loss: 0.2139, average score: 0.9091, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.0772ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [33/100] train loss: 0.2251 test loss: 0.2260, average score: 0.8947, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.1327ROC AUC score: 0.9737131342736766
+ROC AUC score: 0.9737131342736766
+ Epoch [34/100] train loss: 0.2191 test loss: 0.2125, average score: 0.9043, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.1039ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [35/100] train loss: 0.2201 test loss: 0.2155, average score: 0.8995, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.1819ROC AUC score: 0.9736215424070344
+ROC AUC score: 0.9736215424070342
+ Epoch [36/100] train loss: 0.2216 test loss: 0.2152, average score: 0.9187, auc_LUAD: 0.9736, auc_LUSC: 0.9736
+ Testing bag [208/209] bag loss: 0.2366ROC AUC score: 0.9736215424070344
+ROC AUC score: 0.9736215424070342
+ Epoch [37/100] train loss: 0.2203 test loss: 0.2242, average score: 0.9282, auc_LUAD: 0.9736, auc_LUSC: 0.9736
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5337, LUSC 0.4993
+ Testing bag [208/209] bag loss: 0.0973ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [38/100] train loss: 0.2192 test loss: 0.2166, average score: 0.8995, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.0938ROC AUC score: 0.9737131342736766
+ROC AUC score: 0.9737131342736766
+ Epoch [39/100] train loss: 0.2174 test loss: 0.2174, average score: 0.8995, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.0690ROC AUC score: 0.9738963180069611
+ROC AUC score: 0.973896318006961
+ Epoch [40/100] train loss: 0.2178 test loss: 0.2294, average score: 0.8900, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [208/209] bag loss: 0.2230ROC AUC score: 0.9737131342736766
+ROC AUC score: 0.9737131342736766
+ Epoch [41/100] train loss: 0.2256 test loss: 0.2214, average score: 0.9282, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5481, LUSC 0.4862
+ Testing bag [208/209] bag loss: 0.0989ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [42/100] train loss: 0.2211 test loss: 0.2154, average score: 0.8995, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.1679ROC AUC score: 0.9737131342736766
+ROC AUC score: 0.9737131342736766
+ Epoch [43/100] train loss: 0.2219 test loss: 0.2132, average score: 0.9043, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.5112ROC AUC score: 0.9734383586737498
+ROC AUC score: 0.9734383586737498
+ Epoch [44/100] train loss: 0.2149 test loss: 0.2923, average score: 0.9187, auc_LUAD: 0.9734, auc_LUSC: 0.9734
+ Testing bag [208/209] bag loss: 0.1421ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [45/100] train loss: 0.2226 test loss: 0.2112, average score: 0.8995, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.1758ROC AUC score: 0.9737131342736766
+ROC AUC score: 0.9737131342736766
+ Epoch [46/100] train loss: 0.2219 test loss: 0.2138, average score: 0.9187, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.0910ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [47/100] train loss: 0.2179 test loss: 0.2167, average score: 0.8995, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.2071ROC AUC score: 0.9737131342736766
+ROC AUC score: 0.9737131342736766
+ Epoch [48/100] train loss: 0.2158 test loss: 0.2185, average score: 0.9282, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.0822ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [49/100] train loss: 0.2179 test loss: 0.2196, average score: 0.8947, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.2367ROC AUC score: 0.9736215424070342
+ROC AUC score: 0.9736215424070342
+ Epoch [50/100] train loss: 0.2197 test loss: 0.2241, average score: 0.9330, auc_LUAD: 0.9736, auc_LUSC: 0.9736
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5312, LUSC 0.5120
+ Testing bag [208/209] bag loss: 0.4709ROC AUC score: 0.9736215424070342
+ROC AUC score: 0.9736215424070342
+ Epoch [51/100] train loss: 0.2196 test loss: 0.2821, average score: 0.9282, auc_LUAD: 0.9736, auc_LUSC: 0.9736
+ Testing bag [208/209] bag loss: 0.0690ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [52/100] train loss: 0.2220 test loss: 0.2265, average score: 0.8900, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.1314ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [53/100] train loss: 0.2272 test loss: 0.2103, average score: 0.9043, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.2200ROC AUC score: 0.9737131342736765
+ROC AUC score: 0.9737131342736766
+ Epoch [54/100] train loss: 0.2215 test loss: 0.2205, average score: 0.9282, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.1397ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [55/100] train loss: 0.2233 test loss: 0.2101, average score: 0.8995, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.1614ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [56/100] train loss: 0.2180 test loss: 0.2115, average score: 0.9043, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.1865ROC AUC score: 0.9737131342736765
+ROC AUC score: 0.9737131342736766
+ Epoch [57/100] train loss: 0.2216 test loss: 0.2146, average score: 0.9282, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+ Testing bag [208/209] bag loss: 0.1718ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [58/100] train loss: 0.2261 test loss: 0.2125, average score: 0.9187, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.0448ROC AUC score: 0.9739879098736033
+ROC AUC score: 0.9739879098736033
+ Epoch [59/100] train loss: 0.2193 test loss: 0.2519, average score: 0.8660, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.2640ROC AUC score: 0.9737131342736765
+ROC AUC score: 0.9737131342736766
+ Epoch [60/100] train loss: 0.2163 test loss: 0.2295, average score: 0.9330, auc_LUAD: 0.9737, auc_LUSC: 0.9737
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5036, LUSC 0.5503
+ Testing bag [208/209] bag loss: 0.0908ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [61/100] train loss: 0.2231 test loss: 0.2145, average score: 0.8995, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.2125ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [62/100] train loss: 0.2212 test loss: 0.2185, average score: 0.9282, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 0.2218ROC AUC score: 0.9738047261403188
+ROC AUC score: 0.9738047261403188
+ Epoch [63/100] train loss: 0.2136 test loss: 0.2204, average score: 0.9330, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5510, LUSC 0.5033
+ Testing bag [208/209] bag loss: 0.0786ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [64/100] train loss: 0.2210 test loss: 0.2190, average score: 0.8995, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.1166ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [65/100] train loss: 0.2212 test loss: 0.2096, average score: 0.9043, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.0883ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [66/100] train loss: 0.2237 test loss: 0.2149, average score: 0.8995, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.0687ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [67/100] train loss: 0.2141 test loss: 0.2246, average score: 0.8947, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.0663ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [68/100] train loss: 0.2141 test loss: 0.2261, average score: 0.8900, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.0448ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [69/100] train loss: 0.2198 test loss: 0.2512, average score: 0.8660, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.2801ROC AUC score: 0.973896318006961
+ROC AUC score: 0.9738963180069611
+ Epoch [70/100] train loss: 0.2238 test loss: 0.2321, average score: 0.9234, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [208/209] bag loss: 0.1235ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [71/100] train loss: 0.2166 test loss: 0.2086, average score: 0.9043, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.1663ROC AUC score: 0.973896318006961
+ROC AUC score: 0.9738963180069611
+ Epoch [72/100] train loss: 0.2192 test loss: 0.2105, average score: 0.9187, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [208/209] bag loss: 0.0642ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [73/100] train loss: 0.2202 test loss: 0.2273, average score: 0.8900, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.2234ROC AUC score: 0.973896318006961
+ROC AUC score: 0.973896318006961
+ Epoch [74/100] train loss: 0.2205 test loss: 0.2196, average score: 0.9330, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5542, LUSC 0.5109
+ Testing bag [208/209] bag loss: 0.0822ROC AUC score: 0.9740795017402455
+ROC AUC score: 0.9740795017402455
+ Epoch [75/100] train loss: 0.2211 test loss: 0.2162, average score: 0.8947, auc_LUAD: 0.9741, auc_LUSC: 0.9741
+ Testing bag [208/209] bag loss: 0.0838ROC AUC score: 0.9740795017402455
+ROC AUC score: 0.9740795017402455
+ Epoch [76/100] train loss: 0.2177 test loss: 0.2153, average score: 0.8947, auc_LUAD: 0.9741, auc_LUSC: 0.9741
+ Testing bag [208/209] bag loss: 0.2149ROC AUC score: 0.973896318006961
+ROC AUC score: 0.973896318006961
+ Epoch [77/100] train loss: 0.2199 test loss: 0.2179, average score: 0.9330, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [208/209] bag loss: 0.1381ROC AUC score: 0.973896318006961
+ROC AUC score: 0.973896318006961
+ Epoch [78/100] train loss: 0.2195 test loss: 0.2079, average score: 0.9043, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [208/209] bag loss: 0.1852ROC AUC score: 0.973896318006961
+ROC AUC score: 0.973896318006961
+ Epoch [79/100] train loss: 0.2174 test loss: 0.2125, average score: 0.9282, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [208/209] bag loss: 0.0889ROC AUC score: 0.9740795017402455
+ROC AUC score: 0.9740795017402455
+ Epoch [80/100] train loss: 0.2205 test loss: 0.2132, average score: 0.8995, auc_LUAD: 0.9741, auc_LUSC: 0.9741
+ Testing bag [208/209] bag loss: 0.0603ROC AUC score: 0.97426268547353
+ROC AUC score: 0.97426268547353
+ Epoch [81/100] train loss: 0.2187 test loss: 0.2296, average score: 0.8804, auc_LUAD: 0.9743, auc_LUSC: 0.9743
+ Testing bag [208/209] bag loss: 0.2096ROC AUC score: 0.9739879098736033
+ROC AUC score: 0.9739879098736033
+ Epoch [82/100] train loss: 0.2215 test loss: 0.2163, average score: 0.9282, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.1264ROC AUC score: 0.9739879098736033
+ROC AUC score: 0.9739879098736033
+ Epoch [83/100] train loss: 0.2166 test loss: 0.2073, average score: 0.9043, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.1755ROC AUC score: 0.9739879098736033
+ROC AUC score: 0.9739879098736033
+ Epoch [84/100] train loss: 0.2171 test loss: 0.2108, average score: 0.9234, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.0883ROC AUC score: 0.9741710936068878
+ROC AUC score: 0.9741710936068877
+ Epoch [85/100] train loss: 0.2183 test loss: 0.2128, average score: 0.8995, auc_LUAD: 0.9742, auc_LUSC: 0.9742
+ Testing bag [208/209] bag loss: 0.1419ROC AUC score: 0.973896318006961
+ROC AUC score: 0.9738963180069611
+ Epoch [86/100] train loss: 0.2165 test loss: 0.2073, average score: 0.9043, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [208/209] bag loss: 0.1196ROC AUC score: 0.973896318006961
+ROC AUC score: 0.9738963180069611
+ Epoch [87/100] train loss: 0.2175 test loss: 0.2072, average score: 0.9043, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [208/209] bag loss: 0.0286ROC AUC score: 0.97426268547353
+ROC AUC score: 0.97426268547353
+ Epoch [88/100] train loss: 0.2153 test loss: 0.2889, average score: 0.8708, auc_LUAD: 0.9743, auc_LUSC: 0.9743
+ Testing bag [208/209] bag loss: 0.1814ROC AUC score: 0.973896318006961
+ROC AUC score: 0.9738963180069611
+ Epoch [89/100] train loss: 0.2205 test loss: 0.2112, average score: 0.9282, auc_LUAD: 0.9739, auc_LUSC: 0.9739
+ Testing bag [208/209] bag loss: 0.2513ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [90/100] train loss: 0.2189 test loss: 0.2244, average score: 0.9330, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+Best model saved at: weights\20241126\fold_3_12.pth Best thresholds: LUAD 0.5299, LUSC 0.5529
+ Testing bag [208/209] bag loss: 0.0887ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [91/100] train loss: 0.2196 test loss: 0.2121, average score: 0.8995, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.1401ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [92/100] train loss: 0.2187 test loss: 0.2067, average score: 0.9043, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.0993ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [93/100] train loss: 0.2178 test loss: 0.2092, average score: 0.8995, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.1696ROC AUC score: 0.9740795017402454
+ROC AUC score: 0.9740795017402455
+ Epoch [94/100] train loss: 0.2175 test loss: 0.2092, average score: 0.9234, auc_LUAD: 0.9741, auc_LUSC: 0.9741
+ Testing bag [208/209] bag loss: 0.1440ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [95/100] train loss: 0.2220 test loss: 0.2067, average score: 0.9091, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.1761ROC AUC score: 0.9740795017402454
+ROC AUC score: 0.9740795017402455
+ Epoch [96/100] train loss: 0.2143 test loss: 0.2100, average score: 0.9234, auc_LUAD: 0.9741, auc_LUSC: 0.9741
+ Testing bag [208/209] bag loss: 0.1341ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [97/100] train loss: 0.2186 test loss: 0.2061, average score: 0.9043, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.1307ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [98/100] train loss: 0.2199 test loss: 0.2060, average score: 0.9043, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.0810ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [99/100] train loss: 0.2190 test loss: 0.2138, average score: 0.8947, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 0.0880ROC AUC score: 0.9739879098736032
+ROC AUC score: 0.9739879098736033
+ Epoch [100/100] train loss: 0.2199 test loss: 0.2112, average score: 0.8995, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+Starting CV fold 4.
+ Testing bag [208/209] bag loss: 3.1376ROC AUC score: 0.9668338907469342
+ROC AUC score: 0.9668338907469343
+ Epoch [1/100] train loss: 0.2719 test loss: 0.2658, average score: 0.9043, auc_LUAD: 0.9668, auc_LUSC: 0.9668
+Best model saved at: weights\20241126\fold_4_12.pth Best thresholds: LUAD 0.3957, LUSC 0.6087
+ Testing bag [208/209] bag loss: 2.7582ROC AUC score: 0.9690635451505016
+ROC AUC score: 0.9690635451505017
+ Epoch [2/100] train loss: 0.2542 test loss: 0.2367, average score: 0.9282, auc_LUAD: 0.9691, auc_LUSC: 0.9691
+Best model saved at: weights\20241126\fold_4_12.pth Best thresholds: LUAD 0.5404, LUSC 0.4643
+ Testing bag [208/209] bag loss: 3.8573ROC AUC score: 0.9696209587513935
+ROC AUC score: 0.9696209587513935
+ Epoch [3/100] train loss: 0.2425 test loss: 0.2796, average score: 0.8804, auc_LUAD: 0.9696, auc_LUSC: 0.9696
+ Testing bag [208/209] bag loss: 3.6276ROC AUC score: 0.9700854700854701
+ROC AUC score: 0.9700854700854702
+ Epoch [4/100] train loss: 0.2392 test loss: 0.2487, average score: 0.9043, auc_LUAD: 0.9701, auc_LUSC: 0.9701
+ Testing bag [208/209] bag loss: 3.4487ROC AUC score: 0.9707357859531773
+ROC AUC score: 0.9707357859531773
+ Epoch [5/100] train loss: 0.2381 test loss: 0.2313, average score: 0.9187, auc_LUAD: 0.9707, auc_LUSC: 0.9707
+ Testing bag [208/209] bag loss: 3.6594ROC AUC score: 0.9711073950204386
+ROC AUC score: 0.9711073950204385
+ Epoch [6/100] train loss: 0.2391 test loss: 0.2359, average score: 0.9187, auc_LUAD: 0.9711, auc_LUSC: 0.9711
+ Testing bag [208/209] bag loss: 3.9505ROC AUC score: 0.9711073950204385
+ROC AUC score: 0.9711073950204385
+ Epoch [7/100] train loss: 0.2319 test loss: 0.2484, average score: 0.9043, auc_LUAD: 0.9711, auc_LUSC: 0.9711
+ Testing bag [208/209] bag loss: 3.6831ROC AUC score: 0.9716648086213303
+ROC AUC score: 0.9716648086213304
+ Epoch [8/100] train loss: 0.2358 test loss: 0.2280, average score: 0.9234, auc_LUAD: 0.9717, auc_LUSC: 0.9717
+Best model saved at: weights\20241126\fold_4_12.pth Best thresholds: LUAD 0.4678, LUSC 0.5358
+ Testing bag [208/209] bag loss: 3.6171ROC AUC score: 0.971850613154961
+ROC AUC score: 0.971850613154961
+ Epoch [9/100] train loss: 0.2329 test loss: 0.2223, average score: 0.9282, auc_LUAD: 0.9719, auc_LUSC: 0.9719
+Best model saved at: weights\20241126\fold_4_12.pth Best thresholds: LUAD 0.4978, LUSC 0.5110
+ Testing bag [208/209] bag loss: 4.1759ROC AUC score: 0.9721293199554069
+ROC AUC score: 0.972129319955407
+ Epoch [10/100] train loss: 0.2311 test loss: 0.2518, average score: 0.8995, auc_LUAD: 0.9721, auc_LUSC: 0.9721
+ Testing bag [208/209] bag loss: 3.5104ROC AUC score: 0.972129319955407
+ROC AUC score: 0.9721293199554069
+ Epoch [11/100] train loss: 0.2313 test loss: 0.2150, average score: 0.9187, auc_LUAD: 0.9721, auc_LUSC: 0.9721
+ Testing bag [208/209] bag loss: 3.2297ROC AUC score: 0.9723151244890376
+ROC AUC score: 0.9723151244890376
+ Epoch [12/100] train loss: 0.2278 test loss: 0.2096, average score: 0.9234, auc_LUAD: 0.9723, auc_LUSC: 0.9723
+ Testing bag [208/209] bag loss: 3.3965ROC AUC score: 0.9723151244890376
+ROC AUC score: 0.9723151244890376
+ Epoch [13/100] train loss: 0.2347 test loss: 0.2103, average score: 0.9282, auc_LUAD: 0.9723, auc_LUSC: 0.9723
+Best model saved at: weights\20241126\fold_4_12.pth Best thresholds: LUAD 0.5936, LUSC 0.4232
+ Testing bag [208/209] bag loss: 2.8104ROC AUC score: 0.9726867335562988
+ROC AUC score: 0.9726867335562988
+ Epoch [14/100] train loss: 0.2293 test loss: 0.2148, average score: 0.9043, auc_LUAD: 0.9727, auc_LUSC: 0.9727
+ Testing bag [208/209] bag loss: 3.8527ROC AUC score: 0.9726867335562988
+ROC AUC score: 0.9726867335562988
+ Epoch [15/100] train loss: 0.2280 test loss: 0.2222, average score: 0.9282, auc_LUAD: 0.9727, auc_LUSC: 0.9727
+Best model saved at: weights\20241126\fold_4_12.pth Best thresholds: LUAD 0.4919, LUSC 0.5275
+ Testing bag [208/209] bag loss: 3.0870ROC AUC score: 0.9727796358231141
+ROC AUC score: 0.972779635823114
+ Epoch [16/100] train loss: 0.2322 test loss: 0.2084, average score: 0.9234, auc_LUAD: 0.9728, auc_LUSC: 0.9728
+ Testing bag [208/209] bag loss: 4.1152ROC AUC score: 0.9726867335562988
+ROC AUC score: 0.9726867335562988
+ Epoch [17/100] train loss: 0.2328 test loss: 0.2330, average score: 0.9187, auc_LUAD: 0.9727, auc_LUSC: 0.9727
+ Testing bag [208/209] bag loss: 5.0800ROC AUC score: 0.9726867335562988
+ROC AUC score: 0.9726867335562988
+ Epoch [18/100] train loss: 0.2255 test loss: 0.3195, average score: 0.8517, auc_LUAD: 0.9727, auc_LUSC: 0.9727
+ Testing bag [208/209] bag loss: 3.8457ROC AUC score: 0.9725938312894834
+ROC AUC score: 0.9725938312894835
+ Epoch [19/100] train loss: 0.2318 test loss: 0.2179, average score: 0.9330, auc_LUAD: 0.9726, auc_LUSC: 0.9726
+Best model saved at: weights\20241126\fold_4_12.pth Best thresholds: LUAD 0.5172, LUSC 0.5050
+ Testing bag [208/209] bag loss: 3.0375ROC AUC score: 0.9725938312894834
+ROC AUC score: 0.9725938312894835
+ Epoch [20/100] train loss: 0.2301 test loss: 0.2083, average score: 0.9187, auc_LUAD: 0.9726, auc_LUSC: 0.9726
+ Testing bag [208/209] bag loss: 4.2344ROC AUC score: 0.9725938312894834
+ROC AUC score: 0.9725938312894835
+ Epoch [21/100] train loss: 0.2284 test loss: 0.2367, average score: 0.9187, auc_LUAD: 0.9726, auc_LUSC: 0.9726
+ Testing bag [208/209] bag loss: 4.7021ROC AUC score: 0.9725938312894834
+ROC AUC score: 0.9725938312894835
+ Epoch [22/100] train loss: 0.2309 test loss: 0.2730, average score: 0.8995, auc_LUAD: 0.9726, auc_LUSC: 0.9726
+ Testing bag [208/209] bag loss: 4.6413ROC AUC score: 0.9725009290226682
+ROC AUC score: 0.9725009290226682
+ Epoch [23/100] train loss: 0.2274 test loss: 0.2665, average score: 0.8995, auc_LUAD: 0.9725, auc_LUSC: 0.9725
+ Testing bag [208/209] bag loss: 4.6245ROC AUC score: 0.9725009290226682
+ROC AUC score: 0.9725009290226682
+ Epoch [24/100] train loss: 0.2289 test loss: 0.2646, average score: 0.8995, auc_LUAD: 0.9725, auc_LUSC: 0.9725
+ Testing bag [208/209] bag loss: 3.7001ROC AUC score: 0.9727796358231141
+ROC AUC score: 0.9727796358231141
+ Epoch [25/100] train loss: 0.2307 test loss: 0.2109, average score: 0.9139, auc_LUAD: 0.9728, auc_LUSC: 0.9728
+ Testing bag [208/209] bag loss: 3.3274ROC AUC score: 0.9728725380899294
+ROC AUC score: 0.9728725380899295
+ Epoch [26/100] train loss: 0.2251 test loss: 0.2050, average score: 0.9234, auc_LUAD: 0.9729, auc_LUSC: 0.9729
+ Testing bag [208/209] bag loss: 3.6296ROC AUC score: 0.9728725380899294
+ROC AUC score: 0.9728725380899295
+ Epoch [27/100] train loss: 0.2231 test loss: 0.2087, average score: 0.9139, auc_LUAD: 0.9729, auc_LUSC: 0.9729
+ Testing bag [208/209] bag loss: 3.0621ROC AUC score: 0.9729654403567447
+ROC AUC score: 0.9729654403567447
+ Epoch [28/100] train loss: 0.2272 test loss: 0.2065, average score: 0.9187, auc_LUAD: 0.9730, auc_LUSC: 0.9730
+ Testing bag [208/209] bag loss: 4.7598ROC AUC score: 0.9729654403567447
+ROC AUC score: 0.9729654403567447
+ Epoch [29/100] train loss: 0.2238 test loss: 0.2752, average score: 0.8947, auc_LUAD: 0.9730, auc_LUSC: 0.9730
+ Testing bag [208/209] bag loss: 3.7496ROC AUC score: 0.9729654403567447
+ROC AUC score: 0.9729654403567447
+ Epoch [30/100] train loss: 0.2281 test loss: 0.2117, average score: 0.9234, auc_LUAD: 0.9730, auc_LUSC: 0.9730
+ Testing bag [208/209] bag loss: 3.1152ROC AUC score: 0.9730583426235601
+ROC AUC score: 0.97305834262356
+ Epoch [31/100] train loss: 0.2318 test loss: 0.2052, average score: 0.9234, auc_LUAD: 0.9731, auc_LUSC: 0.9731
+ Testing bag [208/209] bag loss: 4.1180ROC AUC score: 0.9729654403567447
+ROC AUC score: 0.9729654403567447
+ Epoch [32/100] train loss: 0.2200 test loss: 0.2271, average score: 0.9282, auc_LUAD: 0.9730, auc_LUSC: 0.9730
+ Testing bag [208/209] bag loss: 2.6368ROC AUC score: 0.9730583426235601
+ROC AUC score: 0.97305834262356
+ Epoch [33/100] train loss: 0.2257 test loss: 0.2189, average score: 0.8995, auc_LUAD: 0.9731, auc_LUSC: 0.9731
+ Testing bag [208/209] bag loss: 3.5775ROC AUC score: 0.9728725380899294
+ROC AUC score: 0.9728725380899295
+ Epoch [34/100] train loss: 0.2283 test loss: 0.2070, average score: 0.9139, auc_LUAD: 0.9729, auc_LUSC: 0.9729
+ Testing bag [208/209] bag loss: 3.6767ROC AUC score: 0.9728725380899294
+ROC AUC score: 0.9728725380899295
+ Epoch [35/100] train loss: 0.2299 test loss: 0.2091, average score: 0.9187, auc_LUAD: 0.9729, auc_LUSC: 0.9729
+ Testing bag [208/209] bag loss: 2.9213ROC AUC score: 0.9731512448903754
+ROC AUC score: 0.9731512448903753
+ Epoch [36/100] train loss: 0.2261 test loss: 0.2080, average score: 0.9091, auc_LUAD: 0.9732, auc_LUSC: 0.9732
+ Testing bag [208/209] bag loss: 3.7506ROC AUC score: 0.9729654403567447
+ROC AUC score: 0.9729654403567447
+ Epoch [37/100] train loss: 0.2251 test loss: 0.2110, average score: 0.9234, auc_LUAD: 0.9730, auc_LUSC: 0.9730
+ Testing bag [208/209] bag loss: 3.2821ROC AUC score: 0.9729654403567447
+ROC AUC score: 0.9729654403567447
+ Epoch [38/100] train loss: 0.2239 test loss: 0.2034, average score: 0.9234, auc_LUAD: 0.9730, auc_LUSC: 0.9730
+ Testing bag [208/209] bag loss: 4.1911ROC AUC score: 0.97305834262356
+ROC AUC score: 0.97305834262356
+ Epoch [39/100] train loss: 0.2241 test loss: 0.2318, average score: 0.9234, auc_LUAD: 0.9731, auc_LUSC: 0.9731
+ Testing bag [208/209] bag loss: 4.9357ROC AUC score: 0.97305834262356
+ROC AUC score: 0.97305834262356
+ Epoch [40/100] train loss: 0.2221 test loss: 0.2941, average score: 0.8756, auc_LUAD: 0.9731, auc_LUSC: 0.9731
+ Testing bag [208/209] bag loss: 5.2061ROC AUC score: 0.97305834262356
+ROC AUC score: 0.97305834262356
+ Epoch [41/100] train loss: 0.2236 test loss: 0.3250, average score: 0.8565, auc_LUAD: 0.9731, auc_LUSC: 0.9731
+ Testing bag [208/209] bag loss: 5.1111ROC AUC score: 0.9731512448903753
+ROC AUC score: 0.9731512448903754
+ Epoch [42/100] train loss: 0.2222 test loss: 0.3141, average score: 0.8565, auc_LUAD: 0.9732, auc_LUSC: 0.9732
+ Testing bag [208/209] bag loss: 3.6870ROC AUC score: 0.9736157562244518
+ROC AUC score: 0.9736157562244518
+ Epoch [43/100] train loss: 0.2309 test loss: 0.2094, average score: 0.9234, auc_LUAD: 0.9736, auc_LUSC: 0.9736
+ Testing bag [208/209] bag loss: 4.4662ROC AUC score: 0.9733370494240059
+ROC AUC score: 0.9733370494240059
+ Epoch [44/100] train loss: 0.2245 test loss: 0.2513, average score: 0.9091, auc_LUAD: 0.9733, auc_LUSC: 0.9733
+ Testing bag [208/209] bag loss: 4.2791ROC AUC score: 0.9735228539576366
+ROC AUC score: 0.9735228539576366
+ Epoch [45/100] train loss: 0.2228 test loss: 0.2380, average score: 0.9139, auc_LUAD: 0.9735, auc_LUSC: 0.9735
+ Testing bag [208/209] bag loss: 3.3608ROC AUC score: 0.9739873652917131
+ROC AUC score: 0.9739873652917131
+ Epoch [46/100] train loss: 0.2227 test loss: 0.2032, average score: 0.9187, auc_LUAD: 0.9740, auc_LUSC: 0.9740
+ Testing bag [208/209] bag loss: 2.3793ROC AUC score: 0.9742660720921591
+ROC AUC score: 0.974266072092159
+ Epoch [47/100] train loss: 0.2187 test loss: 0.2289, average score: 0.8947, auc_LUAD: 0.9743, auc_LUSC: 0.9743
+ Testing bag [208/209] bag loss: 2.3677ROC AUC score: 0.9742660720921591
+ROC AUC score: 0.974266072092159
+ Epoch [48/100] train loss: 0.2188 test loss: 0.2291, average score: 0.8947, auc_LUAD: 0.9743, auc_LUSC: 0.9743
+ Testing bag [208/209] bag loss: 3.6750ROC AUC score: 0.9741731698253437
+ROC AUC score: 0.9741731698253437
+ Epoch [49/100] train loss: 0.2292 test loss: 0.2093, average score: 0.9234, auc_LUAD: 0.9742, auc_LUSC: 0.9742
+ Testing bag [208/209] bag loss: 3.7906ROC AUC score: 0.9741731698253437
+ROC AUC score: 0.9741731698253437
+ Epoch [50/100] train loss: 0.2244 test loss: 0.2131, average score: 0.9234, auc_LUAD: 0.9742, auc_LUSC: 0.9742
+ Testing bag [208/209] bag loss: 5.0522ROC AUC score: 0.9738015607580826
+ROC AUC score: 0.9738015607580826
+ Epoch [51/100] train loss: 0.2206 test loss: 0.3104, average score: 0.8565, auc_LUAD: 0.9738, auc_LUSC: 0.9738
+ Testing bag [208/209] bag loss: 4.5761ROC AUC score: 0.9740802675585284
+ROC AUC score: 0.9740802675585284
+ Epoch [52/100] train loss: 0.2253 test loss: 0.2630, average score: 0.8995, auc_LUAD: 0.9741, auc_LUSC: 0.9741
+ Testing bag [208/209] bag loss: 4.1440ROC AUC score: 0.9740802675585284
+ROC AUC score: 0.9740802675585284
+ Epoch [53/100] train loss: 0.2219 test loss: 0.2315, average score: 0.9234, auc_LUAD: 0.9741, auc_LUSC: 0.9741
+ Testing bag [208/209] bag loss: 3.6579ROC AUC score: 0.9744518766257896
+ROC AUC score: 0.9744518766257897
+ Epoch [54/100] train loss: 0.2306 test loss: 0.2093, average score: 0.9234, auc_LUAD: 0.9745, auc_LUSC: 0.9745
+ Testing bag [208/209] bag loss: 3.1996ROC AUC score: 0.9743589743589743
+ROC AUC score: 0.9743589743589743
+ Epoch [55/100] train loss: 0.2208 test loss: 0.2020, average score: 0.9282, auc_LUAD: 0.9744, auc_LUSC: 0.9744
+ Testing bag [208/209] bag loss: 4.2252ROC AUC score: 0.9742660720921591
+ROC AUC score: 0.9742660720921591
+ Epoch [56/100] train loss: 0.2199 test loss: 0.2375, average score: 0.9139, auc_LUAD: 0.9743, auc_LUSC: 0.9743
+ Testing bag [208/209] bag loss: 3.5510ROC AUC score: 0.9743589743589743
+ROC AUC score: 0.9743589743589743
+ Epoch [57/100] train loss: 0.2173 test loss: 0.2065, average score: 0.9187, auc_LUAD: 0.9744, auc_LUSC: 0.9744
+ Testing bag [208/209] bag loss: 3.4148ROC AUC score: 0.9744518766257897
+ROC AUC score: 0.9744518766257897
+ Epoch [58/100] train loss: 0.2251 test loss: 0.2037, average score: 0.9139, auc_LUAD: 0.9745, auc_LUSC: 0.9745
+ Testing bag [208/209] bag loss: 3.4184ROC AUC score: 0.9743589743589743
+ROC AUC score: 0.9743589743589743
+ Epoch [59/100] train loss: 0.2276 test loss: 0.2038, average score: 0.9139, auc_LUAD: 0.9744, auc_LUSC: 0.9744
+ Testing bag [208/209] bag loss: 4.4340ROC AUC score: 0.9743589743589743
+ROC AUC score: 0.9743589743589745
+ Epoch [60/100] train loss: 0.2224 test loss: 0.2534, average score: 0.9091, auc_LUAD: 0.9744, auc_LUSC: 0.9744
+ Testing bag [208/209] bag loss: 3.4003ROC AUC score: 0.9746376811594203
+ROC AUC score: 0.9746376811594203
+ Epoch [61/100] train loss: 0.2209 test loss: 0.2036, average score: 0.9139, auc_LUAD: 0.9746, auc_LUSC: 0.9746
+ Testing bag [208/209] bag loss: 3.2105ROC AUC score: 0.9746376811594203
+ROC AUC score: 0.9746376811594203
+ Epoch [62/100] train loss: 0.2165 test loss: 0.2017, average score: 0.9234, auc_LUAD: 0.9746, auc_LUSC: 0.9746
+ Testing bag [208/209] bag loss: 2.7709ROC AUC score: 0.9748234856930509
+ROC AUC score: 0.9748234856930509
+ Epoch [63/100] train loss: 0.2204 test loss: 0.2067, average score: 0.9091, auc_LUAD: 0.9748, auc_LUSC: 0.9748
+ Testing bag [208/209] bag loss: 3.8452ROC AUC score: 0.974823485693051
+ROC AUC score: 0.9748234856930509
+ Epoch [64/100] train loss: 0.2251 test loss: 0.2173, average score: 0.9330, auc_LUAD: 0.9748, auc_LUSC: 0.9748
+Best model saved at: weights\20241126\fold_4_12.pth Best thresholds: LUAD 0.5387, LUSC 0.5077
+ Testing bag [208/209] bag loss: 1.8630ROC AUC score: 0.9750092902266815
+ROC AUC score: 0.9750092902266816
+ Epoch [65/100] train loss: 0.2177 test loss: 0.2649, average score: 0.8756, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 3.4147ROC AUC score: 0.9749163879598662
+ROC AUC score: 0.9749163879598662
+ Epoch [66/100] train loss: 0.2287 test loss: 0.2038, average score: 0.9187, auc_LUAD: 0.9749, auc_LUSC: 0.9749
+ Testing bag [208/209] bag loss: 3.1713ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [67/100] train loss: 0.2166 test loss: 0.2014, average score: 0.9234, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 3.6083ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [68/100] train loss: 0.2203 test loss: 0.2087, average score: 0.9234, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 3.3598ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [69/100] train loss: 0.2252 test loss: 0.2030, average score: 0.9139, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 3.8366ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [70/100] train loss: 0.2182 test loss: 0.2179, average score: 0.9330, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+Best model saved at: weights\20241126\fold_4_12.pth Best thresholds: LUAD 0.5300, LUSC 0.5087
+ Testing bag [208/209] bag loss: 4.8087ROC AUC score: 0.9749163879598662
+ROC AUC score: 0.9749163879598662
+ Epoch [71/100] train loss: 0.2186 test loss: 0.2921, average score: 0.8756, auc_LUAD: 0.9749, auc_LUSC: 0.9749
+ Testing bag [208/209] bag loss: 3.7597ROC AUC score: 0.9748234856930509
+ROC AUC score: 0.9748234856930509
+ Epoch [72/100] train loss: 0.2209 test loss: 0.2150, average score: 0.9282, auc_LUAD: 0.9748, auc_LUSC: 0.9748
+ Testing bag [208/209] bag loss: 3.3507ROC AUC score: 0.9748234856930509
+ROC AUC score: 0.9748234856930509
+ Epoch [73/100] train loss: 0.2171 test loss: 0.2030, average score: 0.9234, auc_LUAD: 0.9748, auc_LUSC: 0.9748
+ Testing bag [208/209] bag loss: 3.1641ROC AUC score: 0.9748234856930509
+ROC AUC score: 0.9748234856930509
+ Epoch [74/100] train loss: 0.2162 test loss: 0.2012, average score: 0.9187, auc_LUAD: 0.9748, auc_LUSC: 0.9748
+ Testing bag [208/209] bag loss: 3.9498ROC AUC score: 0.9748234856930509
+ROC AUC score: 0.9748234856930509
+ Epoch [75/100] train loss: 0.2242 test loss: 0.2250, average score: 0.9282, auc_LUAD: 0.9748, auc_LUSC: 0.9748
+ Testing bag [208/209] bag loss: 3.6539ROC AUC score: 0.9749163879598662
+ROC AUC score: 0.9749163879598662
+ Epoch [76/100] train loss: 0.2224 test loss: 0.2115, average score: 0.9234, auc_LUAD: 0.9749, auc_LUSC: 0.9749
+ Testing bag [208/209] bag loss: 3.4985ROC AUC score: 0.9749163879598662
+ROC AUC score: 0.9749163879598662
+ Epoch [77/100] train loss: 0.2172 test loss: 0.2065, average score: 0.9234, auc_LUAD: 0.9749, auc_LUSC: 0.9749
+ Testing bag [208/209] bag loss: 3.8931ROC AUC score: 0.9749163879598662
+ROC AUC score: 0.9749163879598662
+ Epoch [78/100] train loss: 0.2202 test loss: 0.2223, average score: 0.9330, auc_LUAD: 0.9749, auc_LUSC: 0.9749
+ Testing bag [208/209] bag loss: 3.4168ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [79/100] train loss: 0.2189 test loss: 0.2046, average score: 0.9187, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 4.0454ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [80/100] train loss: 0.2210 test loss: 0.2309, average score: 0.9234, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 1.9449ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [81/100] train loss: 0.2111 test loss: 0.2497, average score: 0.8804, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 5.0540ROC AUC score: 0.9751021924934968
+ROC AUC score: 0.9751021924934968
+ Epoch [82/100] train loss: 0.2197 test loss: 0.3245, average score: 0.8517, auc_LUAD: 0.9751, auc_LUSC: 0.9751
+ Testing bag [208/209] bag loss: 3.0451ROC AUC score: 0.9751950947603121
+ROC AUC score: 0.9751950947603122
+ Epoch [83/100] train loss: 0.2221 test loss: 0.2007, average score: 0.9234, auc_LUAD: 0.9752, auc_LUSC: 0.9752
+ Testing bag [208/209] bag loss: 3.7921ROC AUC score: 0.9750092902266815
+ROC AUC score: 0.9750092902266816
+ Epoch [84/100] train loss: 0.2166 test loss: 0.2178, average score: 0.9330, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 2.5039ROC AUC score: 0.9751021924934968
+ROC AUC score: 0.9751021924934968
+ Epoch [85/100] train loss: 0.2171 test loss: 0.2118, average score: 0.8995, auc_LUAD: 0.9751, auc_LUSC: 0.9751
+ Testing bag [208/209] bag loss: 3.4091ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [86/100] train loss: 0.2212 test loss: 0.2049, average score: 0.9187, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 4.0354ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [87/100] train loss: 0.2192 test loss: 0.2321, average score: 0.9187, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 4.3925ROC AUC score: 0.9749163879598662
+ROC AUC score: 0.9749163879598662
+ Epoch [88/100] train loss: 0.2169 test loss: 0.2588, average score: 0.8995, auc_LUAD: 0.9749, auc_LUSC: 0.9749
+ Testing bag [208/209] bag loss: 2.8915ROC AUC score: 0.9751021924934968
+ROC AUC score: 0.9751021924934968
+ Epoch [89/100] train loss: 0.2177 test loss: 0.2013, average score: 0.9139, auc_LUAD: 0.9751, auc_LUSC: 0.9751
+ Testing bag [208/209] bag loss: 3.9501ROC AUC score: 0.9749163879598662
+ROC AUC score: 0.9749163879598662
+ Epoch [90/100] train loss: 0.2203 test loss: 0.2281, average score: 0.9234, auc_LUAD: 0.9749, auc_LUSC: 0.9749
+ Testing bag [208/209] bag loss: 3.6214ROC AUC score: 0.9750092902266815
+ROC AUC score: 0.9750092902266816
+ Epoch [91/100] train loss: 0.2157 test loss: 0.2121, average score: 0.9282, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 2.8030ROC AUC score: 0.9750092902266815
+ROC AUC score: 0.9750092902266816
+ Epoch [92/100] train loss: 0.2111 test loss: 0.2023, average score: 0.9139, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 3.5288ROC AUC score: 0.9750092902266815
+ROC AUC score: 0.9750092902266816
+ Epoch [93/100] train loss: 0.2204 test loss: 0.2088, average score: 0.9234, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 2.5476ROC AUC score: 0.9751021924934968
+ROC AUC score: 0.9751021924934968
+ Epoch [94/100] train loss: 0.2198 test loss: 0.2084, average score: 0.9091, auc_LUAD: 0.9751, auc_LUSC: 0.9751
+ Testing bag [208/209] bag loss: 3.6750ROC AUC score: 0.9751950947603122
+ROC AUC score: 0.9751950947603122
+ Epoch [95/100] train loss: 0.2190 test loss: 0.2148, average score: 0.9282, auc_LUAD: 0.9752, auc_LUSC: 0.9752
+ Testing bag [208/209] bag loss: 3.6279ROC AUC score: 0.9751950947603122
+ROC AUC score: 0.9751950947603122
+ Epoch [96/100] train loss: 0.2118 test loss: 0.2128, average score: 0.9282, auc_LUAD: 0.9752, auc_LUSC: 0.9752
+ Testing bag [208/209] bag loss: 3.8338ROC AUC score: 0.9751950947603122
+ROC AUC score: 0.9751950947603122
+ Epoch [97/100] train loss: 0.2126 test loss: 0.2224, average score: 0.9282, auc_LUAD: 0.9752, auc_LUSC: 0.9752
+ Testing bag [208/209] bag loss: 3.9060ROC AUC score: 0.9751950947603122
+ROC AUC score: 0.9751950947603122
+ Epoch [98/100] train loss: 0.2167 test loss: 0.2266, average score: 0.9282, auc_LUAD: 0.9752, auc_LUSC: 0.9752
+ Testing bag [208/209] bag loss: 3.0003ROC AUC score: 0.9751021924934968
+ROC AUC score: 0.9751021924934968
+ Epoch [99/100] train loss: 0.2096 test loss: 0.2003, average score: 0.9139, auc_LUAD: 0.9751, auc_LUSC: 0.9751
+ Testing bag [208/209] bag loss: 4.7215ROC AUC score: 0.9750092902266816
+ROC AUC score: 0.9750092902266816
+ Epoch [100/100] train loss: 0.2128 test loss: 0.2926, average score: 0.8756, auc_LUAD: 0.9750, auc_LUSC: 0.9750
+ Testing bag [208/209] bag loss: 0.0013ROC AUC score: 0.9836697247706422
+ROC AUC score: 0.9836697247706422
+ Testing bag [208/209] bag loss: 0.0002ROC AUC score: 0.9862385321100917
+ROC AUC score: 0.9862385321100917
+ Testing bag [208/209] bag loss: 0.0010ROC AUC score: 0.9876146788990825
+ROC AUC score: 0.9876146788990825
+ Testing bag [208/209] bag loss: 0.0014ROC AUC score: 0.9877064220183487
+ROC AUC score: 0.9877064220183486
+ Testing bag [208/209] bag loss: 0.0003ROC AUC score: 0.9848623853211009
+ROC AUC score: 0.9848623853211009
+Hamming Loss: 0.06220095693779904
+Testset Accuracy (Exact Match Ratio): Accuracy:0.937799043062201 F1:0.9377476101557131
+D:\study\codes\work2\dsmil-wsi-master\trainnewtcga.py:468: FutureWarning: Unlike other reduction functions (e.g. `skew`, `kurtosis`), the default behavior of `mode` typically preserves the axis it acts along. In SciPy 1.11.0, this behavior will change: the default value of `keepdims` will become False, the `axis` over which the statistic is taken will be eliminated, and the value None will no longer be accepted. Set `keepdims` to True or False to avoid this warning.
+  mode_result = mode(predictions_stack, axis=0)
+
+Process finished with exit code 0
