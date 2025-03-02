@@ -10,7 +10,7 @@
 
 **REPLICATED UNIFIED VERSION WITHOUT INSTANCE LABEL:**
 
-A replicated result by [TRMIL](https://arxiv.org/abs/2307.14025) is as follows:
+A replicated result provided by [TRMIL](https://arxiv.org/abs/2307.14025) is as follows:
 
 ![image](https://github.com/user-attachments/assets/44f6a61b-bd1c-43a5-803e-7549b6360fe8)
 
