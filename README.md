@@ -86,7 +86,7 @@ The training/evaluation codes and data are mostly modified from previous work [D
 
 
 ## Simulated Dataset Experience
-logs:`logs\simulated_cifar10\probalign-fsa.log` corresponds to feature space attention with prob align term; `logs\simulated_cifar10\probalign-psa.log` corresponds to probability space attention with prob align term; prefix `RL` means unfreezing the encoder.
+logs: `logs\simulated_cifar10\probalign-fsa.log` corresponds to feature space attention with prob align term; `logs\simulated_cifar10\probalign-psa.log` corresponds to probability space attention with prob align term; suffix `RL` means unfreezing the encoder.
 
 The model was proposed by our simulated data first, so here is our advice and validation:
 
