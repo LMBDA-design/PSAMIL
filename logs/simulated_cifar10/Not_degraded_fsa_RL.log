@@ -1,0 +1,87 @@
+D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\main.py 
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\transforms\_functional_video.py:6: UserWarning: The 'torchvision.transforms._functional_video' module is deprecated since 0.12 and will be removed in the future. Please use the 'torchvision.transforms.functional' module instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\transforms\_transforms_video.py:22: UserWarning: The 'torchvision.transforms._transforms_video' module is deprecated since 0.12 and will be removed in the future. Please use the 'torchvision.transforms' module instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\outdated\utils.py:14: OutdatedPackageWarning: The package pingouin is out of date. Your version is 0.5.3, the latest is 0.5.5.
+Set the environment variable OUTDATED_IGNORE=1 to disable these warnings.
+  return warn(
+=== Training Settings ===
+Epochs: 20
+Learning Rate: 0.01
+Positive Label Start From: 1
+Bag Size: 64
+Dataset: CIFAR10
+Backbone: resnet18
+Pooling Component: fsa
+If no finetune,no backbone trained,no cl.Fine-tune: True
+Contain Contrastive Term:  False
+Files already downloaded and verified
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+epoch,lam =  0 0 0.2
+Train Epoch 0: 100%|██████████| 10000/10000 [16:05<00:00, 10.36it/s, Training loss=3.01, critical_weights=0.316, std=0.0521, entropy=0.447]
+Train Epoch 1:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 30.54
+epoch,lam =  0 1 0.2
+Train Epoch 1: 100%|██████████| 10000/10000 [15:51<00:00, 10.51it/s, Training loss=2.1, critical_weights=0.713, std=0.179, entropy=0.4]
+Train Epoch 2:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 52.67
+epoch,lam =  0 2 0.2
+Train Epoch 2: 100%|██████████| 10000/10000 [16:46<00:00,  9.93it/s, Training loss=1.54, critical_weights=0.808, std=0.218, entropy=0.331]
+Train Epoch 3:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 60.7
+epoch,lam =  0 3 0.2
+Train Epoch 3: 100%|██████████| 10000/10000 [16:23<00:00, 10.17it/s, Training loss=1.34, critical_weights=0.835, std=0.232, entropy=0.281]
+Train Epoch 4:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 64.17
+epoch,lam =  0 4 0.2
+Train Epoch 4: 100%|██████████| 10000/10000 [16:24<00:00, 10.15it/s, Training loss=1.26, critical_weights=0.843, std=0.237, entropy=0.239]
+Train Epoch 5:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 66.13
+epoch,lam =  0 5 0.2
+Train Epoch 5: 100%|██████████| 10000/10000 [16:08<00:00, 10.33it/s, Training loss=1.16, critical_weights=0.844, std=0.236, entropy=0.225]
+Train Epoch 6:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 64.39
+epoch,lam =  0 6 0.2
+Train Epoch 6: 100%|██████████| 10000/10000 [15:44<00:00, 10.59it/s, Training loss=1.12, critical_weights=0.852, std=0.243, entropy=0.208]
+Train Epoch 7:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 63.54
+epoch,lam =  0 7 0.2
+Train Epoch 7: 100%|██████████| 10000/10000 [15:27<00:00, 10.78it/s, Training loss=1.1, critical_weights=0.855, std=0.241, entropy=0.195]
+Train Epoch 8:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 68.58
+epoch,lam =  0 8 0.2
+Train Epoch 8: 100%|██████████| 10000/10000 [15:16<00:00, 10.91it/s, Training loss=1.12, critical_weights=0.856, std=0.244, entropy=0.192]
+Train Epoch 9:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 68.4
+epoch,lam =  0 9 0.2
+Train Epoch 9: 100%|██████████| 10000/10000 [15:23<00:00, 10.83it/s, Training loss=1.07, critical_weights=0.86, std=0.245, entropy=0.193]
+Train Epoch 10:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 66.88
+epoch,lam =  0 10 0.2
+Train Epoch 10: 100%|██████████| 10000/10000 [15:19<00:00, 10.87it/s, Training loss=1.01, critical_weights=0.868, std=0.25, entropy=0.183]
+Train Epoch 11:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 69.34
+epoch,lam =  0 11 0.2
+Train Epoch 11: 100%|██████████| 10000/10000 [15:19<00:00, 10.88it/s, Training loss=1.02, critical_weights=0.864, std=0.249, entropy=0.184]
+Train Epoch 12:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 70.32
+epoch,lam =  0 12 0.2
+Train Epoch 12: 100%|██████████| 10000/10000 [16:37<00:00, 10.02it/s, Training loss=1.02, critical_weights=0.863, std=0.248, entropy=0.187]
+Train Epoch 13:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 70.3
+epoch,lam =  0 13 0.2
+Train Epoch 13: 100%|██████████| 10000/10000 [15:50<00:00, 10.52it/s, Training loss=1.02, critical_weights=0.861, std=0.245, entropy=0.187]
+Test Accuracy: 67.77
+epoch,lam =  0 14 0.2
+Train Epoch 14: 100%|██████████| 10000/10000 [15:31<00:00, 10.74it/s, Training loss=1.01, critical_weights=0.864, std=0.249, entropy=0.182]
+Train Epoch 15:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 69.54
+epoch,lam =  0 15 0.2
+Train Epoch 15: 100%|██████████| 10000/10000 [15:18<00:00, 10.88it/s, Training loss=1.01, critical_weights=0.867, std=0.25, entropy=0.179]
+Train Epoch 16:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 66.78
+epoch,lam =  0 16 0.2
+Train Epoch 16: 100%|██████████| 10000/10000 [15:21<00:00, 10.85it/s, Training loss=1.01, critical_weights=0.866, std=0.25, entropy=0.178]
+Train Epoch 17:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 69.88
+epoch,lam =  0 17 0.2
+Train Epoch 17: 100%|██████████| 10000/10000 [15:16<00:00, 10.91it/s, Training loss=0.96, critical_weights=0.866, std=0.249, entropy=0.175]
+Train Epoch 18:   0%|          | 0/10000 [00:00<?, ?it/s]Test Accuracy: 68.59
+epoch,lam =  0 18 0.2
+Train Epoch 18: 100%|██████████| 10000/10000 [15:03<00:00, 11.07it/s, Training loss=1.02, critical_weights=0.863, std=0.247, entropy=0.174]
+Test Accuracy: 66.49
+epoch,lam =  0 19 0.2
+Train Epoch 19: 100%|██████████| 10000/10000 [16:08<00:00, 10.33it/s, Training loss=0.99, critical_weights=0.861, std=0.247, entropy=0.178]
+Test Accuracy: 68.81
+[0.3054, 0.5267, 0.607, 0.6417, 0.6613, 0.6439, 0.6354, 0.6858, 0.684, 0.6688, 0.6934, 0.7032, 0.703, 0.6777, 0.6954, 0.6678, 0.6988, 0.6859, 0.6649, 0.6881] [0.3156074925292749, 0.7126858927738388, 0.8075436658225255, 0.8352729229094461, 0.8428184454498114, 0.8442671678370214, 0.8516608712181449, 0.854827577092871, 0.8560303601729218, 0.8603056924609235, 0.8681529240415606, 0.8639019173207227, 0.8628412657327484, 0.8614923764172243, 0.8638616896137188, 0.8665562360486714, 0.8656130644747987, 0.8655614112367388, 0.8627184123252518, 0.8612650607221527] [0.05209459162221465, 0.17946460117854585, 0.21833655394628584, 0.23188167683788924, 0.23691855253614486, 0.23628400821487885, 0.2430595755681192, 0.2412978208775632, 0.24433279850715772, 0.2453266571725748, 0.2501619881631137, 0.24867629898079394, 0.2478734442543937, 0.24477849838496185, 0.24886027401462052, 0.2501389998659608, 0.24984624098557398, 0.24939200570326064, 0.24677090990422584, 0.24686990323531427]
+saving  fsa_CIFAR10_20_0.6881.pth
+
+Process finished with exit code 0

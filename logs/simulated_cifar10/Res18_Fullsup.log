@@ -1,0 +1,93 @@
+D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\Fullsup.py 
+=== Training Settings ===
+Epochs: 20
+Learning Rate: 0.01
+Dataset: CIFAR10
+Model: resnet18
+OnlyClassifier: False
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\study\codes\work2\IMIPL\venv\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Train Epoch: 1 Loss: 0.642520: 100%|██████████| 1563/1563 [01:13<00:00, 21.22it/s]
+
+Test set: Average loss: 0.0083, Accuracy: 8206/10000 (82%)
+
+Train Epoch: 2 Loss: 0.606156: 100%|██████████| 1563/1563 [01:11<00:00, 21.90it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0065, Accuracy: 8566/10000 (86%)
+
+Train Epoch: 3 Loss: 0.103855: 100%|██████████| 1563/1563 [01:11<00:00, 21.89it/s]
+
+Test set: Average loss: 0.0052, Accuracy: 8929/10000 (89%)
+
+Train Epoch: 4 Loss: 0.149169: 100%|██████████| 1563/1563 [01:12<00:00, 21.54it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0055, Accuracy: 8816/10000 (88%)
+
+Train Epoch: 5 Loss: 0.073579: 100%|██████████| 1563/1563 [01:11<00:00, 21.96it/s]
+
+Test set: Average loss: 0.0055, Accuracy: 8848/10000 (88%)
+
+Train Epoch: 6 Loss: 0.125257: 100%|██████████| 1563/1563 [01:10<00:00, 22.03it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0045, Accuracy: 9079/10000 (91%)
+
+Train Epoch: 7 Loss: 0.037008: 100%|██████████| 1563/1563 [01:10<00:00, 22.14it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0053, Accuracy: 8986/10000 (90%)
+
+Train Epoch: 8 Loss: 0.008911: 100%|██████████| 1563/1563 [01:11<00:00, 21.86it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0047, Accuracy: 9063/10000 (91%)
+
+Train Epoch: 9 Loss: 0.079907: 100%|██████████| 1563/1563 [01:12<00:00, 21.62it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0053, Accuracy: 9021/10000 (90%)
+
+Train Epoch: 10 Loss: 0.009774: 100%|██████████| 1563/1563 [01:12<00:00, 21.59it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0053, Accuracy: 9060/10000 (91%)
+
+Train Epoch: 11 Loss: 0.863902: 100%|██████████| 1563/1563 [01:11<00:00, 21.77it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0052, Accuracy: 9082/10000 (91%)
+
+Train Epoch: 12 Loss: 0.656922: 100%|██████████| 1563/1563 [01:11<00:00, 21.97it/s]
+
+Test set: Average loss: 0.0047, Accuracy: 9115/10000 (91%)
+
+Train Epoch: 13 Loss: 0.038838: 100%|██████████| 1563/1563 [01:11<00:00, 21.84it/s]
+
+Test set: Average loss: 0.0047, Accuracy: 9153/10000 (92%)
+
+Train Epoch: 14 Loss: 0.033624: 100%|██████████| 1563/1563 [01:11<00:00, 21.89it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0050, Accuracy: 9065/10000 (91%)
+
+Train Epoch: 15 Loss: 0.451036: 100%|██████████| 1563/1563 [01:11<00:00, 21.85it/s]
+
+Test set: Average loss: 0.0043, Accuracy: 9189/10000 (92%)
+
+Train Epoch: 16 Loss: 0.217450: 100%|██████████| 1563/1563 [01:11<00:00, 21.84it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0050, Accuracy: 9106/10000 (91%)
+
+Train Epoch: 17 Loss: 0.107576: 100%|██████████| 1563/1563 [01:11<00:00, 21.94it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0046, Accuracy: 9189/10000 (92%)
+
+Train Epoch: 18 Loss: 0.003246: 100%|██████████| 1563/1563 [01:11<00:00, 21.87it/s]
+  0%|          | 0/1563 [00:00<?, ?it/s]
+Test set: Average loss: 0.0049, Accuracy: 9143/10000 (91%)
+
+Train Epoch: 19 Loss: 0.037200: 100%|██████████| 1563/1563 [01:10<00:00, 22.05it/s]
+
+Test set: Average loss: 0.0058, Accuracy: 9056/10000 (91%)
+
+Train Epoch: 20 Loss: 0.244986: 100%|██████████| 1563/1563 [01:13<00:00, 21.27it/s]
+
+Test set: Average loss: 0.0045, Accuracy: 9232/10000 (92%)
+
+
+Process finished with exit code 0
