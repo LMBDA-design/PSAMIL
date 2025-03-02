@@ -16,7 +16,7 @@ A replicated result by [TRMIL](https://arxiv.org/abs/2307.14025) is as follows:
 
 
 Evaluation:
-Coming soon.
+Run `benchmark.py` to evaluate the performance.
 
 
 ### Camelyon16/TCGA-Lung-Cancer
