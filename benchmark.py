@@ -15,7 +15,7 @@ DATASETS = ["musk1",
 
 if __name__ == "__main__":
     for DATASET in DATASETS:
-        datapath = f'datasets\\Benchmark\\{DATASET}.mat'
+        datapath = f'datasets\\{DATASET}.mat'
         features_struct = scipy.io.loadmat(datapath)
         data = features_struct['data']
         x = data[:, 0]
