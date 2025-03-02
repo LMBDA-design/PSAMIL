@@ -6,12 +6,13 @@ from model.PSMIL_benchmark import MILModel
 from sklearn.model_selection import KFold
 import torch.optim as optim
 
-DATASETS = ["musk1",
-            "musk2",
-            "fox",
-            "tiger",
-            "elephant"
+DATASETS = ["MUSK1",
+            "MUSK2",
+            "FOX",
+            "TIGER",
+            "ELEPHANT"
 ]
+
 
 if __name__ == "__main__":
     for DATASET in DATASETS:
