@@ -8,7 +8,6 @@ from torchvision import datasets, models
 from torchvision.transforms import transforms, ToTensor, Normalize, Pad, RandomCrop, RandomHorizontalFlip, \
     RandomErasing, \
     ToPILImage
-from segment_anything import SamPredictor, sam_model_registry
 from tqdm import tqdm
 import numpy as np
 import matplotlib.pyplot as plt
@@ -73,17 +72,6 @@ def visualize_clusters(model, dataloader):
     plt.legend(*scatter.legend_elements(), title="Classes", loc="upper right")
     plt.title('CIFAR10 Features used by ResNet18(Sup.)')
     plt.show()
-class SAMClassifier(nn.Module):
-    def __init__(self, num_classes):
-        super(SAMClassifier, self).__init__()
-        self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
-        self.fc = nn.Linear(256, num_classes)  # 假设特征矩阵的通道数为256
-
-    def forward(self, x):
-        x = self.avgpool(x)
-        x = torch.flatten(x, 1)
-        x = self.fc(x)
-        return x
 
 
 # 定义数据加载器
@@ -197,9 +185,6 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=0.001)
 def train(epoch):
     model.train()
     pbar = tqdm(trainloader)
-
-
-
     for batch_idx, (data, target) in enumerate(pbar):
         data, target = data.to(device), target.to(device)
         optimizer.zero_grad()
