@@ -48,6 +48,8 @@ if __name__ == "__main__":
                     for j in range(x_train.shape[0]):
                         ix = torch.Tensor(x_train[j]).cuda()
                         iy = torch.Tensor(y_train[j]).squeeze().cuda()
+                        # trim last dim of instance label
+                        # ix = ix[:,:-1]
                         if iy < 0:  # negative class, -1 to 0
                             iy += 1.
                         optimizer.zero_grad()
@@ -59,6 +61,8 @@ if __name__ == "__main__":
                     for j in range(x_test.shape[0]):
                         ix = torch.Tensor(x_test[j]).cuda()
                         iy = torch.Tensor(y_test[j]).squeeze().cuda()
+                        # trim last dim of instance label
+                        # ix = ix[:,:-1]
                         if iy < 0:  # negative class, -1 to 0
                             iy += 1.
                         loss, preds, weights = model.calculate_objective(ix, iy, -1)
@@ -71,4 +75,4 @@ if __name__ == "__main__":
                 accs.append(opt_acc)
         acc = np.mean(accs)
         std = np.std(accs)
-        print(f"overall RGP {DATASET}   acc {acc},std:{std}")
+        print(f"overall PSA {DATASET}   acc {acc},std:{std}")
