@@ -119,15 +119,15 @@ The training/evaluation codes and data are mostly modified from previous work [D
 1. We used the SimCLR 20x features provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) in training set.
 2. We used `model/PSMIL.py` to implement the experiments, which only involves probability space attention.
 3. We modified the original code from DSMIL when split the test bags for Camelyon16, because it is different with the mainstream evaluation way. We choose the whole test set as the `reserved_testing_bags` variable in `traincancer.py`. This is different from the original "Camelyon16 with a 5-fold cross-validation and a standalone test set" introduced by [DSMIL](https://github.com/binli123/dsmil-wsi), which choose a random inner split as test set.
-4. In `visualize_psmil_c16.py`, we loaded the initial embedder weights provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) to produce the test slide SimCLR 20x features. To simplify the codes, we directly use the SimCLR features generated in the middle of DSMIL as the input to our model. 
+4. In `visualize_psmil_c16.py`, we loaded the initial embedder weights provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) to produce the test slide SimCLR 20x features. To simplify the codes, we directly use the SimCLR features generated in the middle of DSMIL as the input to our model. Details see the code.
 
 
 
 
-## Simulated Dataset Experience
+## Advice and Validation on Simulated Dataset
 logs: `logs\simulated_cifar10\probalign-fsa.log` corresponds to feature space attention with prob align term; `logs\simulated_cifar10\probalign-psa.log` corresponds to probability space attention with prob align term; suffix `RL` means unfreezing the encoder.
 
-The model was proposed by our simulated data first, so here is our advice and validation:
+The model was proposed by optimizing our simulated data performance, so here is our advice and validation through the process:
 
 1. It is **POSSIBLE** for your deep attention-based MIL model to degrade to random guessing. If your model faces degradation issue when unfreeze the feature encoder, consider to augment your input and align to achieve stable performance (top acc 81% in `logs\simulated_cifar10\probaligned-fsa.log`).
 
