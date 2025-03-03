@@ -26,6 +26,20 @@ To evaluate PSMIL under this trimmed data version, unleash the lines below in  `
                         # ix = ix[:,:-1]
 ```
 After that, you may get a possible performance output:
+```
+D:\study\codes\work1\RGMIL-main\venv\Scripts\python.exe D:\study\codes\work1\RGMIL-main\benchmark.py 
+D:\study\codes\work1\RGMIL-main\venv\lib\site-packages\torch\optim\adam.py:77: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+D:\study\codes\work1\RGMIL-main\venv\lib\site-packages\torch\optim\optimizer.py:459: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
+  if p.grad is not None:
+overall PSA MUSK1   acc 0.9617777777777777,std:0.06487062147740068
+overall PSA MUSK2   acc 0.9638181818181818,std:0.056612062494089635
+overall PSA FOX   acc 0.7339999999999999,std:0.13580868897091966
+overall PSA TIGER   acc 0.884,std:0.06118823416311341
+overall PSA ELEPHANT   acc 0.9179999999999999,std:0.051730068625510245
+
+Process finished with exit code 0
+```
 
 
 ### Camelyon16/TCGA-Lung-Cancer
