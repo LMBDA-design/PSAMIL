@@ -37,7 +37,7 @@ To evaluate PSMIL under this trimmed data version, unleash the lines below in  `
                         # trim last dim of instance label
                         # ix = ix[:,:-1]
 ```
-After that, you may get a possible performance output:
+After that, you may get a possible performance output under trimmed input version:
 ```
 D:\study\codes\work1\RGMIL-main\venv\Scripts\python.exe D:\study\codes\work1\RGMIL-main\benchmark.py 
 D:\study\codes\work1\RGMIL-main\venv\lib\site-packages\torch\optim\adam.py:77: UserWarning: The .grad attribute of a Tensor that is not a leaf Tensor is being accessed. Its .grad attribute won't be populated during autograd.backward(). If you indeed want the .grad field to be populated for a non-leaf Tensor, use .retain_grad() on the non-leaf Tensor. If you access the non-leaf Tensor by mistake, make sure you access the leaf Tensor instead. See github.com/pytorch/pytorch/pull/30531 for more informations. (Triggered internally at aten\src\ATen/core/TensorBody.h:491.)
