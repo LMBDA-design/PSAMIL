@@ -134,6 +134,6 @@ The model was proposed by our simulated data first, so here is our advice and va
    
 4. The weights version of psa we upload would provide around 87% accuracy(5% gap to full supervision, top acc 92% in `logs\Res18-Fullsup.log`), we are not able to provide the exact weights in the `logs\probalign-psa.log` because we have **LOST** original weights.  
 
-Run  `visualize_psmil_cifar.py` to test the performance of `model/PSAMIL`. You can also modify the param to validate the other weights we provided, including feature-space attention version.
+Run  `visualize_psmil_cifar.py` to test the performance of `model/PSAMIL`. You can also modify the param by your own to validate the other weights we provided.
 
 Weights comming soon on Netdisk.
