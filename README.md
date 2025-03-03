@@ -1,4 +1,16 @@
 # PSAMIL
+python version : 3.10
+
+Requirements:
+- numpy
+- scikit-learn
+- torch
+- torchvision
+- scipy
+- PIL 
+- visdom
+- pandas
+- pingouin
 
 ## Public Dataset Experiments
 
