@@ -133,7 +133,7 @@ The model was proposed by optimizing our simulated data performance, so here is 
 
 2. There **ARE** cases when classic attention-based MIL model trained successfully (top acc 70% in `logs\simulated_cifar10\Not-degraded-fsa-RL.log`, top acc 69% in `logs\simulated_cifar10\fixed_feature_fsa.log`);  also applying Probability-space Attention **ONLY** may be not effective enough to fully avoid degradation.
    
-3. When using probability-space attention together with prob align, fix the encoder parameter in the first epoch to provide better initial estimation. **A careful tune of hyperparameter in this version would bring the best performance among all models we tested on instance level, also we found no degradation issue under this setting.(top acc 88% in `logs\simulated_cifar10\probaligned-psa.log`)**.
+3. When using probability-space attention together with prob align, fix the encoder parameter in the first epoch to provide better initial estimation. **A careful tune of hyperparameter in this version would bring the best performance among all models we tested on instance level, also we found NO degradation issue under this setting.(top acc 88% in `logs\simulated_cifar10\probaligned-psa.log`)**.
    
 4. The weights version of psa we upload would provide around 87% accuracy(5% gap to full supervision, top acc 92% in `logs\simulated_cifar10\Res18-Fullsup.log`), we are not able to provide the exact weights in the `logs\simulated_cifar10\probaligned-psa.log` because we have **LOST** original weights.  
 
