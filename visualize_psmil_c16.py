@@ -76,13 +76,14 @@ def bag_dataset(args, csv_file_path):
                             num_workers=args.num_workers, drop_last=False)
     return dataloader, len(transformed_dataset)
 
+
 def test(args, bags_list, milnet):
     milnet.eval()
     num_bags = len(bags_list)
-    Tensor = torch.FloatTensor
+
     psmil = PSMIL("TCGA", "no", False, 1).cuda()
 
-    state_dict_weights = torch.load(os.path.join('weights', '20241126', args.weights[0]+".pth"))
+    state_dict_weights = torch.load(os.path.join('weights', '20241126', args.weights[0] + ".pth"))
     psmil.load_state_dict(state_dict_weights, strict=True)
     for i in range(0, num_bags):
         feats_list = []
@@ -107,7 +108,8 @@ def test(args, bags_list, milnet):
             ins_classes = torch.from_numpy(classes_arr).cuda()
             # bag_prediction, A, _ = milnet.b_classifier(bag_feats, ins_classes)
             # bag_prediction = torch.sigmoid(bag_prediction).squeeze().cpu().numpy()
-            bag_prediction, _, _, ins_prediction, _ = psmil(bag_feats, torch.tensor(-1), bag_feats.shape[0], "psa", "TCGA")
+            bag_prediction, _, _, ins_prediction, _ = psmil(bag_feats, torch.tensor(-1), bag_feats.shape[0], "psa",
+                                                            "TCGA")
             # print(bag_prediction,ins_prediction)
             bag_prediction = torch.argmax(bag_prediction, 1).cpu().numpy()
             ins_prediction = torch.argmax(ins_prediction, 1).cpu().numpy()
@@ -134,17 +136,17 @@ def test(args, bags_list, milnet):
     for fold_weight in args.weights:
         psmil = PSMIL("TCGA", "no", False, 1).cuda()
 
-        state_dict_weights = torch.load(os.path.join('weights', '20241126', fold_weight+".pth"))
+        state_dict_weights = torch.load(os.path.join('weights', '20241126', fold_weight + ".pth"))
         psmil.load_state_dict(state_dict_weights, strict=True)
         best_model = psmil
         criterion = torch.nn.NLLLoss()
         reserved_testing_bags = glob.glob('temp_train/test*.pt')
         test_loss_bag, avg_score, aucs, thresholds_optimal, test_predictions, test_labels = test_metrics(args,
-                                                                                                 reserved_testing_bags,
-                                                                                                 best_model.cuda(),
-                                                                                                 criterion,
-                                                                                                 thresholds=None,
-                                                                                                 return_predictions=True)
+                                                                                                         reserved_testing_bags,
+                                                                                                         best_model.cuda(),
+                                                                                                         criterion,
+                                                                                                         thresholds=None,
+                                                                                                         return_predictions=True)
         fold_predictions.append(test_predictions)
     predictions_stack = np.stack(fold_predictions, axis=0)
     mode_result = mode(predictions_stack, axis=0)
@@ -202,6 +204,8 @@ def test_metrics(args, test_df, milnet, criterion, thresholds=None, return_predi
     if return_predictions:
         return total_loss / len(test_df), avg_score, auc_value, thresholds_optimal, test_predictions, test_labels
     return total_loss / len(test_df), avg_score, auc_value, thresholds_optimal
+
+
 def multi_label_roc(labels, predictions, num_classes, pos_label=1):
     fprs = []
     tprs = []
@@ -240,6 +244,7 @@ def optimal_thresh(fpr, tpr, thresholds, p=0):
     idx = np.argmin(loss, axis=0)
     return fpr[idx], tpr[idx], thresholds[idx]
 
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description='Testing workflow includes attention computing and color map production')
@@ -248,7 +253,8 @@ if __name__ == '__main__':
     parser.add_argument('--num_workers', type=int, default=0)
     parser.add_argument('--feats_size', type=int, default=512)
     parser.add_argument('--thres_tumor', type=float, default=0.5282700061798096)
-    parser.add_argument('--weights', type=str, nargs='+', default=["fold_0_13","fold_1_13","fold_2_13","fold_3_13","fold_4_13"],
+    parser.add_argument('--weights', type=str, nargs='+',
+                        default=["fold_0_13", "fold_1_13", "fold_2_13", "fold_3_13", "fold_4_13"],
                         help='List of weights files to use')
     args = parser.parse_args()
 
@@ -285,6 +291,6 @@ if __name__ == '__main__':
     i_classifier.load_state_dict(new_state_dict, strict=True)
     milnet.i_classifier = i_classifier
 
-    bags_list = glob.glob(os.path.join(r'D:\study\codes\work2\dsmil-wsi-master\test-c16', 'patches', '*'))
+    bags_list = glob.glob(os.path.join(r'test-c16', 'patches', '*'))
     os.makedirs(os.path.join('test-c16', 'output'), exist_ok=True)
     test(args, bags_list, milnet)
