@@ -12,7 +12,8 @@
 
 A replicated result provided by [TRMIL](https://arxiv.org/abs/2307.14025) is as follows:
 
-![image](https://github.com/user-attachments/assets/44f6a61b-bd1c-43a5-803e-7549b6360fe8)
+![image](https://github.com/user-attachments/assets/de642c9f-7ed3-4035-ade9-31c386778246)
+
 
 
 Evaluation:
