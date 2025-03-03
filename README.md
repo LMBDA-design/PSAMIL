@@ -14,6 +14,12 @@ A replicated result provided by [TRMIL](https://arxiv.org/abs/2307.14025) is as 
 
 ![image](https://github.com/user-attachments/assets/de642c9f-7ed3-4035-ade9-31c386778246)
 
+To evaluate PSMIL under this trimmed data version, unleash the lines below in  `benchmark.py`, also remember to modify the `dim_orig` in `model\PSMIL_benchmark.py`:
+```
+                        # trim last dim of instance label
+                        # ix = ix[:,:-1]
+```
+A possible console output:
 
 
 Evaluation:
