@@ -109,45 +109,16 @@ class MILModel(nn.Module):
             dim_orig = 167
         elif dataset == "TIGER" or dataset == "FOX" or dataset == "ELEPHANT":
             dim_orig = 231
-        elif dataset == "web1":
-            dim_orig = 5864
-        elif dataset == "web2":
-            dim_orig = 6520
-        elif dataset == "web3":
-            dim_orig = 6307
-        elif dataset == "web4":
-            dim_orig = 6060
-        elif dataset == "web5":
-            dim_orig = 6408
-        elif dataset == "web6":
-            dim_orig = 6418
-        elif dataset == "web7":
-            dim_orig = 6451
-        elif dataset == "web8":
-            dim_orig = 6000
-        elif dataset == "web9":
-            dim_orig = 6280
-        elif dataset == "messidor":
-            dim_orig = 688
-        elif dataset == "ucsb_breast":
-            dim_orig = 709
-        else:
-            dim_orig = 201
+       
 
-        if dataset == "messidor":
-            self.stem = nn.Sequential(
-                nn.Linear(dim_orig, 2048),
-                nn.ReLU(),
-                # [t,32,4,4]
-            )
-        else:
-            self.stem = nn.Sequential(
-                nn.Linear(dim_orig, F_DIM),
-                nn.ReLU(),
-                nn.Linear(F_DIM, F_DIM),
-                nn.ReLU(),
-                # [t,32,4,4]
-            )
+
+        self.stem = nn.Sequential(
+            nn.Linear(dim_orig, F_DIM),
+            nn.ReLU(),
+            nn.Linear(F_DIM, F_DIM),
+            nn.ReLU(),
+            # [t,32,4,4]
+        )
 
     def forward(self, x,y, epoch):
         fs = self.stem(x)  # [t,o]
