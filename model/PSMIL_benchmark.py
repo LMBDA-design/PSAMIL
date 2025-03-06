@@ -1,11 +1,7 @@
 import torch
 import torch.nn as nn
 from torchvision import models
-import timm
 import torch.nn.functional as F
-from MMNIST.TransMIL import TransMIL
-from sklearn.metrics import silhouette_score
-from sklearn.cluster import KMeans
 from sklearn.exceptions import ConvergenceWarning
 import warnings
 
