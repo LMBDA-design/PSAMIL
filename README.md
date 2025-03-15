@@ -27,8 +27,6 @@ A replicated result provided by [TRMIL](https://arxiv.org/abs/2307.14025) is as 
 ![image](https://github.com/user-attachments/assets/de642c9f-7ed3-4035-ade9-31c386778246)
 
 
-
-
 Evaluation:
 Run `benchmark.py` to evaluate the performance. 
 
@@ -60,6 +58,8 @@ The medical experiments are performed by applying Probability-space Attention(`m
 1.Provide explicit inference output for each instance inside, without damage to decent bag-level performance.
 
 2.Provide better visualization and interpretability under multi-instance mode. 
+
+3.The performance of PSMIL may exhibit more fluctuation in certain experiments, meanwhile the likelihood of achieving high performance is greater than that of the original attention models.
 
 #### Introduction
 These are two large-scale publicly available medical datasets. The detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
@@ -110,9 +110,6 @@ Train:
 2. run `traincancer.py`
 
 
-
-
-
 The training/evaluation codes and data are mostly modified from previous work [DSMIL](https://github.com/binli123/dsmil-wsi). We would make more instructions here to present our process more clearly:
 
 1. We used the SimCLR 20x features provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) in training set.
@@ -123,7 +120,7 @@ The training/evaluation codes and data are mostly modified from previous work [D
 
 
 
-## Advice and Validation on Simulated Dataset
+## Advice and Validation on Simulated Dataset,Instance level
 logs: `logs\simulated_cifar10\probalign-fsa.log` corresponds to feature space attention with prob align term; `logs\simulated_cifar10\probalign-psa.log` corresponds to probability space attention with prob align term; suffix `RL` means unfreezing the encoder.
 
 The model was proposed by optimizing our simulated data performance, so here is our advice and validation through the process:
@@ -138,4 +135,6 @@ The model was proposed by optimizing our simulated data performance, so here is 
 
 Run  `visualize_psmil_cifar.py` to test the performance of `model/PSAMIL`. You can also switch the supported param by your own to validate the other version.
 
-Weights comming soon on Netdisk.
+Weights on [Netdisk](https://pan.baidu.com/s/1tJAx_sqN7rSDopzGmiv0Iw?pwd=wu5y)(Extract code:wu5y).
+
+
