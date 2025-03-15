@@ -120,7 +120,7 @@ The training/evaluation codes and data are mostly modified from previous work [D
 
 
 
-## Advice and Validation on Simulated Dataset,Instance level
+## Validation on Simulated Dataset,Instance level
 logs: `logs\simulated_cifar10\probalign-fsa.log` corresponds to feature space attention with prob align term; `logs\simulated_cifar10\probalign-psa.log` corresponds to probability space attention with prob align term; suffix `RL` means unfreezing the encoder.
 
 The model was proposed by optimizing our simulated data performance, so here is our advice and validation through the process:
