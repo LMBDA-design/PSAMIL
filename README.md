@@ -61,8 +61,9 @@ The medical experiments are performed by applying Probability-space Attention(`m
 
 3.The performance of PSMIL may exhibit more fluctuation in certain experiments, meanwhile the likelihood of achieving high performance is greater than that of the original attention models.
 
+
 #### Introduction
-These are two large-scale publicly available medical datasets. The detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
+These are two large-scale publicly available medical datasets. The detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`.  The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, also we found the results reported in paper and  logs in supplementary are pretty hard to reproduce. Lucky enough we saved corresponding weights in 20241126, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
 
 ```
 D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\testingnewc16.py 
@@ -109,6 +110,7 @@ Train:
 
 2. run `traincancer.py`
 
+3. tune the learning rate or class prototype update parameter to get better performance. The parameter in our code is not guaranteed to be optimal.
 
 The training/evaluation codes and data are mostly modified from previous work [DSMIL](https://github.com/binli123/dsmil-wsi). We would make more instructions here to present our process more clearly:
 
