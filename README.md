@@ -12,6 +12,16 @@ Requirements:
 - pandas
 - pingouin
 
+# Model Overview
+
+1. It is **POSSIBLE** for your deep attention-based MIL model to degrade to random guessing. If your model faces degradation issue when unfreeze the feature encoder, consider to augment your input and align to achieve stable performance.
+
+2. There **ARE** cases when classic attention-based MIL model trained successfully;  also applying Probability-space Attention **ONLY** may be not effective enough to fully avoid degradation.
+   
+3. When using probability-space attention together with prob align, fix the encoder parameter in the first epoch to provide better initial estimation. **A careful tune of hyperparameter(\lambda to control alignment,\gamma to control class prototype update)  would bring the best performance among all models we tested on instance level, also we found NO degradation issue under this setting.**.
+
+4. Results on public datasets show that probability-space attention is also applicable to existing pipeline with preprocessed features. You get competitive bag-level performance and explicit instance-level inference results. 
+
 ## Public Dataset Experiments
 
 ### Simple Benchmarks MUSK1,MUSK2,FOX,TIGER,ELEPHANT
@@ -63,7 +73,7 @@ The medical experiments are performed by applying Probability-space Attention(`m
 
 
 #### Introduction
-These are two large-scale publicly available medical datasets. The detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`.  The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, also we found the results reported in paper and  logs in supplementary are pretty hard to reproduce. Lucky enough we saved corresponding weights in 20241126, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
+These are two large-scale publicly available medical datasets. The detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`.  The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, however we found the best results reported in paper and  logs in supplementary may be pretty hard to reproduce. Lucky enough we saved corresponding weights in 20241126, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
 
 ```
 D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\testingnewc16.py 
