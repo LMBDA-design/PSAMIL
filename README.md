@@ -12,7 +12,7 @@ Requirements:
 - pandas
 - pingouin
 
-# Model Overview
+# Overview
 
 1. It is **POSSIBLE** for your deep attention-based MIL model to degrade to random guessing. If your model faces degradation issue when unfreeze the feature encoder, consider to augment your input and align to achieve stable performance.
 
