@@ -63,6 +63,11 @@ Process finished with exit code 0
 
 
 ### Camelyon16/TCGA-Lung-Cancer
+
+#### Introduction
+
+These are two large-scale publicly available medical datasets. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting. 
+
 The medical experiments are performed by applying Probability-space Attention(`model\PSMIL.py`) only. It would:
 
 1.Provide explicit inference output for each instance inside, without damage to decent bag-level performance.
@@ -72,8 +77,6 @@ The medical experiments are performed by applying Probability-space Attention(`m
 3.The performance of PSMIL may exhibit more fluctuation in certain experiments, meanwhile the likelihood of achieving high performance is greater than that of the original attention models.
 
 
-#### Introduction
-These are two large-scale publicly available medical datasets. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting. 
 
 #### How to Train:
 
