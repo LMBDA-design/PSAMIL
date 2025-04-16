@@ -18,7 +18,7 @@ Requirements:
 
 2. There **ARE** cases when classic attention-based MIL model trained successfully;  also applying Probability-space Attention **ONLY** may be not effective enough to fully avoid degradation.
    
-3. When using probability-space attention together with prob align, fix the encoder parameter in the first epoch to provide better initial estimation. **A careful tune of hyperparameter(\lambda to control alignment,\gamma to control class prototype update)  would bring the best performance among all models we tested on instance level, also we found NO degradation issue under this setting.**.
+3. When using probability-space attention together with prob align, fix the encoder parameter in the first epoch to provide better initial estimation. **A careful tune of hyperparameter(\lambda to control alignment,\gamma to control class prototype update)  would bring the best performance among all models we tested on instance-level simulated datasets, also we found NO degradation issue under this setting.**.
 
 4. Results on public datasets show that probability-space attention is also applicable to existing pipeline with preprocessed features. You get competitive bag-level performance and explicit instance-level inference results. 
 
@@ -73,7 +73,25 @@ The medical experiments are performed by applying Probability-space Attention(`m
 
 
 #### Introduction
-These are two large-scale publicly available medical datasets. The detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`.  The CAMELYON16 dataset contains an independent test set that does not rely on random splitting, however we found the best results reported in paper and  logs in supplementary may be pretty hard to reproduce. Lucky enough we saved corresponding weights in 20241126, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
+These are two large-scale publicly available medical datasets. The CAMELYON16 dataset contains an independent test set that does not rely on random splitting. 
+
+#### How to Train:
+
+1. Download the files [TCGA-Dataset](https://uwmadison.box.com/shared/static/tze4yqclajbdzjwxyb8b1umfwk9vcdwq.zip) and [Camelyon16_Dataset](https://uwmadison.box.com/shared/static/l9ou15iwup73ivdjq0bc61wcg5ae8dwe.zip) to directory `datasets`, and unzip both.
+
+2. run `traincancer.py`
+
+3. tune the learning rate or class prototype update parameter to get better performance. 
+
+The training/evaluation codes and data are mostly modified from previous work [DSMIL](https://github.com/binli123/dsmil-wsi). We would make more instructions here to present our process more clearly:
+
+1. We used the SimCLR 20x features provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) in training set.
+2. We used `model/PSMIL.py` to implement the experiments, which only involves probability space attention.
+3. We modified the original code from DSMIL when split the test bags for Camelyon16, because it is different with the mainstream evaluation way. We choose the whole test set as the `reserved_testing_bags` variable in `traincancer.py`. This is different from the original "Camelyon16 with a 5-fold cross-validation and a standalone test set" introduced by [DSMIL](https://github.com/binli123/dsmil-wsi), which choose a random inner split as test set.
+4. In `visualize_psmil_c16.py`, we loaded the initial embedder weights provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) to produce the test slide SimCLR 20x features. To simplify the codes, we directly use the SimCLR features generated in the middle of DSMIL as the input to our model. Details see the code.
+
+
+The best results with detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`, however we found the best results may be pretty hard to reproduce. Lucky enough we saved corresponding weights in 20241126, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
 
 ```
 D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\testingnewc16.py 
@@ -104,8 +122,6 @@ PSMIL provides explicit probability outputs for each instance(slide patch), maki
 
 You could also validate the weights on TCGA dataset(also stored in `weights/20241126`, with the weights file name corresponding to `logs/TCGA.log`) by customize your own code. But note that there is no fixed test set for TCGA so you may get slightly different performance.
 
-#### How to
-
 Visualization of Camelyon16:
 
 1. Download the file [test-c16](https://pan.baidu.com/s/1zQlGNDUPnEyoUv-WnQP70A?pwd=cdgf )(extract code: cdgf) 
@@ -113,21 +129,6 @@ and unzip the contents to directory `test-c16` to provide the independent test d
 2. You could also download the raw test set slides of C16 dataset and proceed by your own to produce the patches you need and put corresponding files to `test-c16`. If you choose to do so, go to [DSMIL](https://github.com/binli123/dsmil-wsi) and follow the detailed instructions there.
 
 3. run `visualize_psmil_c16.py` to provide metrics and visualization.
-
-Train:
-
-1. Download the files [TCGA-Dataset](https://uwmadison.box.com/shared/static/tze4yqclajbdzjwxyb8b1umfwk9vcdwq.zip) and [Camelyon16_Dataset](https://uwmadison.box.com/shared/static/l9ou15iwup73ivdjq0bc61wcg5ae8dwe.zip) to directory `datasets`, and unzip both.
-
-2. run `traincancer.py`
-
-3. tune the learning rate or class prototype update parameter to get better performance. The parameter in our code is not guaranteed to be optimal.
-
-The training/evaluation codes and data are mostly modified from previous work [DSMIL](https://github.com/binli123/dsmil-wsi). We would make more instructions here to present our process more clearly:
-
-1. We used the SimCLR 20x features provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) in training set.
-2. We used `model/PSMIL.py` to implement the experiments, which only involves probability space attention.
-3. We modified the original code from DSMIL when split the test bags for Camelyon16, because it is different with the mainstream evaluation way. We choose the whole test set as the `reserved_testing_bags` variable in `traincancer.py`. This is different from the original "Camelyon16 with a 5-fold cross-validation and a standalone test set" introduced by [DSMIL](https://github.com/binli123/dsmil-wsi), which choose a random inner split as test set.
-4. In `visualize_psmil_c16.py`, we loaded the initial embedder weights provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) to produce the test slide SimCLR 20x features. To simplify the codes, we directly use the SimCLR features generated in the middle of DSMIL as the input to our model. Details see the code.
 
 
 
