@@ -94,7 +94,7 @@ The training/evaluation codes and data are mostly modified from previous work [D
 4. In `visualize_psmil_c16.py`, we loaded the initial embedder weights provided by [DSMIL]([https://github.com/binli123/dsmil-wsi]) to produce the test slide SimCLR 20x features. To simplify the codes, we directly use the SimCLR features generated in the middle of DSMIL as the input to our model. Details see the code.
 
 
-The best results with detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`, however we found the best results may be pretty hard to reproduce. Lucky enough we saved corresponding weights in 20241126, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
+The best results with detailed training processes are presented in the directories `logs/CAMELYON16.log` and `logs/TCGA.log`, however we found the best results may be pretty hard to reproduce with fluctuation. Lucky enough we saved corresponding weights in 20241126, which is why we provide the independent validation and visualization code `visualize_psmil_c16.py` for the CAMELYON16 data. The expected output is as follows:
 
 ```
 D:\study\codes\work2\IMIPL\venv\Scripts\python.exe D:\study\codes\work2\IMIPL\testingnewc16.py 
