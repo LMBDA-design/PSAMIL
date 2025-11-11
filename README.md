@@ -27,7 +27,7 @@ Requirements:
 
 -------------
 ## UPDATE 20251111:
-Recent theory shows that these pooling methods are performance-equivalent on the specified dataset. The degradations we previously observed across different pooling schemes were likely incidental fluctuations in the training curves, given the small number of runs: all pooling variants, including probabilistic attention, exhibited similar behavior—namely, a lack of effective discriminative power in our observation. The reason the probabilistic alignment term appears to eliminate this phenomenon may simply be that it accelerates training, allowing the optimal performance to be reached much earlier.
+According to recent theory, the explanation needs to be reviewed. Theory shows that these pooling methods are performance-equivalent on the specified dataset. The degradations we previously observed across different pooling schemes were likely incidental fluctuations in the training curves, given the small number of runs: all pooling variants, including probabilistic attention, exhibited similar behavior—namely, a lack of effective discriminative power in our observation. The reason the prob align term appears to eliminate this phenomenon may simply be that it accelerates and corrects training, allowing the optimal performance to be reached much earlier.
 
 ## Public Dataset Experiments
 
