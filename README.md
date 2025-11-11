@@ -12,6 +12,8 @@ Requirements:
 - pandas
 - pingouin
 
+
+
 # Overview
 
 1. It is **POSSIBLE** for your deep attention-based MIL model to degrade to random guessing. If your model faces degradation issue when unfreeze the feature encoder, consider to augment your input and align to achieve stable performance.
@@ -21,6 +23,11 @@ Requirements:
 3. When using probability-space attention together with prob align, fix the encoder parameter in the first epoch to provide better initial estimation. **A careful tune of hyperparameter(\lambda to control alignment,\gamma to control class prototype update)  would bring the best performance among all models we tested on instance-level simulated datasets, also we found NO degradation issue under this setting.**.
 
 4. Results on public datasets show that probability-space attention is also applicable to existing pipeline with preprocessed features. You get competitive bag-level performance and explicit instance-level inference results. 
+
+
+-------------
+## UPDATE 20251111:
+Recent theory shows that these pooling methods are performance-equivalent on the specified dataset. The degradations we previously observed across different pooling schemes were likely incidental fluctuations in the training curves, given the small number of runs: all pooling variants, including probabilistic attention, exhibited similar behavior—namely, a lack of effective discriminative power in our observation. The reason the probabilistic alignment term appears to eliminate this phenomenon may simply be that it accelerates training, allowing the optimal performance to be reached much earlier.
 
 ## Public Dataset Experiments
 
