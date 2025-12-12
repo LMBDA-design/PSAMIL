@@ -14,17 +14,6 @@ Requirements:
 
 
 
-# Overview
-
-When using probability-space attention together with prob align, fix the encoder parameter in the first epoch to provide better initial estimation. **A careful tune of hyperparameter(\lambda to control alignment,\gamma to control class prototype update)  would bring the best performance among all models we tested on instance-level simulated datasets, also we found NO degradation issue under this setting.**.
-
-
--------------
-## UPDATE 20251111:
-According to recent theory, the explanation needs to be reviewed. Theory shows that these pooling methods are performance-equivalent or share the same threshold on specified data. 
-1. The visualization on Camelyon16 of DSMIL we made in paper was by attention scores, so there is no thresholding operation and the visualization is pretty messy with some uncertain instance inference(colored with dark red). This may be solved by appropriate threshold.
-2. The degradations we previously observed across different pooling schemes may not exclude incidental fluctuations in the training curves, given the small number of runs: all pooling variants, including probabilistic attention, exhibited similar behavior—namely, a lack of effective discriminative power in our observation. **The reason the prob align term appears to eliminate this phenomenon may simply be that it accelerates and corrects training, allowing the optimal performance to be reached much earlier.**
-
 ## Public Dataset Experiments
 
 ### Simple Benchmarks MUSK1,MUSK2,FOX,TIGER,ELEPHANT
