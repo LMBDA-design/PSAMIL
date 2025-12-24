@@ -116,6 +116,6 @@ logs: `logs\simulated_cifar10\probalign-fsa.log` corresponds to feature space at
 
 Run  `visualize_psmil_cifar.py` to test the performance of `model/PSAMIL`. You can also switch the supported param by your own to validate the other version.
 
-Weights on [Netdisk](https://pan.baidu.com/s/1tJAx_sqN7rSDopzGmiv0Iw?pwd=wu5y)(Extract code:wu5y).
+Weights on [Netdisk](https://pan.baidu.com/s/1tJAx_sqN7rSDopzGmiv0Iw?pwd=wu5y)(Extract code:wu5y) [Google Drive](https://drive.google.com/drive/folders/1o9o5KT28YgyC1n7Jppk968MWBkNEeQkd?usp=drive_link).
 
 
